@@ -27,7 +27,7 @@ function addLayerListItem(id) {
     listRemoveBtn = document.createElement('a');
     listRemoveBtn.href = '#';
     listRemoveBtn.className = 'list-item-remove-btn';
-    listRemoveBtn.innerHTML = 'X';
+    listRemoveBtn.innerHTML = '-';
 
     listItem.appendChild(listRemoveBtn);
     listItem.appendChild(listId);
@@ -66,4 +66,33 @@ function removeLayer(layerListItem) {
     }
 
     parent.parentNode.removeChild(parent);
+}
+
+function fallterLayersToBottomLayer() {
+    var numberOfShapes,
+        numberOfLayers,
+        layerNr,
+        shapeNr,
+        allChildren,
+        currentChild,
+        i, j;
+
+    numberOfLayers = layersManager.allLayers.length;
+    for (layerNr = numberOfLayers - 1; layerNr >= 1; layerNr -= 1) {
+        numberOfShapes = layersManager.allLayers[layerNr].layer.getChildren().length;
+
+        allChildren = layersManager.allLayers[layerNr].layer.getChildren();
+        for (shapeNr = numberOfShapes - 1; shapeNr >= 0; shapeNr -= 1) {
+            currentChild = allChildren[shapeNr];
+            currentChild.remove();
+
+            layersManager.allLayers[0].layer.add(currentChild);
+        }
+        layersManager.allLayers[0].layer.draw();
+        layersManager.allLayers[layerNr].layer.draw();
+        layersManager.allLayers[layerNr].layer.remove();
+        layersManager.allLayers.splice(layerNr, 1);
+    }
+    document.querySelector('#layer-manager #layer-list').innerHTML = '';
+    addLayerListItem(layersManager.allLayers[0].id);
 }

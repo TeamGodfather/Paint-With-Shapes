@@ -5,13 +5,20 @@ function initializeLayerUI() {
             .querySelector('#layer-manager #layer-list'),
 
         btnCreateLayer = document
-            .querySelector('#layer-manager #create-layer');
+            .querySelector('#layer-manager #create-layer'),
+
+        btnFlattenLayers = document
+            .querySelector('#layer-manager #flatten-layers');
 
     btnCreateLayer.addEventListener('click', function () {
         var newLayer = createNewLayer();
         layersManager.allLayers.push(newLayer);
         layersManager.current = newLayer;
         kineticStage.add(layersManager.current.layer);
+    });
+
+    btnFlattenLayers.addEventListener('click', function (event) {
+        fallterLayersToBottomLayer();
     });
 
     layerList.addEventListener('click', function (event) {

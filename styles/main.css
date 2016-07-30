@@ -9,7 +9,7 @@ body div#root section#canvas-container {
 body div#root section#layer-manager {
   position: fixed;
   width: 80px;
-  height: 200px;
+  height: 300px;
   top: 30px;
   left: 30px;
   padding: 10px;
@@ -32,11 +32,12 @@ body div#root section#layer-manager a#create-layer {
   color: #9acd32;
 }
 body div#root section#layer-manager a#flatten-layers {
+  margin-bottom: 5px;
   color: #000;
 }
 body div#root section#layer-manager ul {
   list-style: none;
-  height: 50%;
+  height: 70%;
   width: 90%;
   overflow-y: auto;
   text-align: left;
@@ -47,6 +48,7 @@ body div#root section#layer-manager ul li a {
 }
 body div#root section#layer-manager ul li a.list-item-remove-btn {
   color: #f00;
+  font-size: 22px;
 }
 body div#root section#layer-manager ul li a.list-item-id {
   color: #000;
