@@ -30,7 +30,10 @@ function initializeKeyboardControls() {
 }
 
 function changeCurrentShapeOpacity(delta) {
-    console.log('called');
+    if (!currentActiveShape.shape) {
+        return;
+    }
+
     var currentOpacity = currentActiveShape.shape.getOpacity();
 
     if (currentOpacity <= 0.05 && +delta < 0) {
@@ -46,6 +49,7 @@ function changeCurrentShapeOpacity(delta) {
 }
 
 function releaseCurrentShape() {
+    currentActiveShape.shape.setStroke('');
     currentActiveShape.shape.remove();
     currentActiveShape.shape.draggable(false);
     layersManager.current.layer.add(currentActiveShape.shape);
@@ -58,14 +62,22 @@ function releaseCurrentShape() {
 }
 
 function rotateCurrentShape(degrees) {
+    if (!currentActiveShape.shape) {
+        return;
+    }
+
     currentActiveShape.shape.rotate(degrees);
     currentActiveShape.tempLayer.draw();
 }
 
 function scaleCurrentShape(scale) {
+    if (!currentActiveShape.shape) {
+        return;
+    }
+
     var currentScale = currentActiveShape.shape.getScale();
 
-    if ((currentScale.x < 0.25 && +scale < 0) || (5 < currentScale.x && 0 < +scale)) {
+    if ((currentScale.x < 0.05 && +scale < 0) || (5 < currentScale.x && 0 < +scale)) {
         return;
     }
 

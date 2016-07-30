@@ -12,10 +12,19 @@ function getShape(shapeType) {
     var shape = createRectangle(),
         tempLayer = new Kinetic.Layer();
 
+    // mark the active shape with a border
+    shape.setStroke(getActiveOutlineStrokeColor(shape));
+
     tempLayer.add(shape);
     kineticStage.add(tempLayer);
 
     currentActiveShape.shape = shape;
     currentActiveShape.tempLayer = tempLayer;
     currentActiveShape.tempLayer.draw();
+}
+
+function getActiveOutlineStrokeColor(shape) {
+
+    // defaults to black for testing
+    return '#000000';
 }

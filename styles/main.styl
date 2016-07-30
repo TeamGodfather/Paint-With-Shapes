@@ -8,15 +8,18 @@ body
     div#root
 
         section#canvas-container
-            border 1px solid black
+            border 1px solid rgba(0,0,0,0)
 
         section#layer-manager
             position fixed
+            width 80px;
+            height 200px
             top 30px
             left 30px 
             padding 10px
             border 1px solid black
             border-radius 10px
+            text-align: center
 
             h2
                 font-size: 16px
@@ -31,12 +34,17 @@ body
             a#create-layer
                 font-size: 22px
                 color yellowgreen
+            
+            a#flatten-layers
+                color black
 
             ul
                 list-style none
-                height 100px
-                width 80px
+                height 50%
+                width 90%
                 overflow-y auto
+                text-align left
+                margin 10px 0 10px 0
 
                 li
                     a

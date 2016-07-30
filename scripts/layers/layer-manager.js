@@ -38,7 +38,7 @@ function addLayerListItem(id) {
 
 function removeLayer(layerListItem) {
     var parent = layerListItem,
-        i;
+        i, numberOfLayers;
 
     while (parent && parent.className.indexOf('layer-list-item') < 0) {
         parent = parent.parentNode;
@@ -57,5 +57,13 @@ function removeLayer(layerListItem) {
             break;
         }
     }
+
+    numberOfLayers = layersManager.allLayers.length;
+    if (numberOfLayers === 0) {
+        layersManager.current = null;
+    } else {
+        layersManager.current = layersManager.allLayers[numberOfLayers - 1];
+    }
+
     parent.parentNode.removeChild(parent);
 }
