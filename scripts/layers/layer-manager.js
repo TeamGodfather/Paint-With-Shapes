@@ -110,11 +110,29 @@ function updateLayerListSelectedItem(currentLayer) {
 
         if ($(layerListItems[i]).hasClass('selected')) {
             $(layerListItems[i]).removeClass('selected');
-            console.log('removed');
         }
         if (currentId === +id) {
             $(layerListItems[i]).addClass('selected');
-            console.log('added');
+        }
+    }
+}
+
+function setActiveLayer(id) {
+    var found = false,
+        length, index;
+
+    length = layersManager.allLayers.length;
+    for (index = 0; index < length; index += 1) {
+        if (found) {
+            layersManager.allLayers[index].layer.setOpacity(0.15);
+        } else {
+            layersManager.allLayers[index].layer.setOpacity(1);
+        }
+        layersManager.allLayers[index].layer.draw();
+
+        if (layersManager.allLayers[index].id === +id) {
+            found = true;
+            layersManager.current = layersManager.allLayers[index];
         }
     }
 }
