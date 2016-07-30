@@ -4,7 +4,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body div#root section#canvas-container {
-  border: 1px solid #000;
+  border: 1px solid rgba(0,0,0,0);
 }
 body div#root section#layer-manager {
   position: fixed;
