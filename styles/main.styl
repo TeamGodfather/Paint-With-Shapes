@@ -48,6 +48,9 @@ body
                 margin 10px 0 10px 0
 
                 li
+                    border-radius: 15px
+                    text-align center
+
                     a
                         padding 5px
 
@@ -57,7 +60,13 @@ body
 
                     a.list-item-id
                         color black
+                    
+                    &.selected
+                        background-color lighten( orange, 20)
 
+                    &:hover
+                        background-color lighten( orange, 30)
+                        
         section#clear
             position fixed
 

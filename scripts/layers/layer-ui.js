@@ -15,6 +15,7 @@ function initializeLayerUI() {
         layersManager.allLayers.push(newLayer);
         layersManager.current = newLayer;
         kineticStage.add(layersManager.current.layer);
+        updateLayerListSelectedItem(newLayer);
     });
 
     btnFlattenLayers.addEventListener('click', function (event) {
