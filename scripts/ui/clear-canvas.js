@@ -1,6 +1,6 @@
 function initializeClearCanvasButton() {
     var btnClearCanvas = document
-        .querySelector('#clear-canvas')
+        .querySelector('#clear #new-canvas-btn')
         .addEventListener('click', function () {
 
             kineticStage.removeChildren();
