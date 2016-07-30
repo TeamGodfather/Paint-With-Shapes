@@ -20,6 +20,7 @@ function initializeLayerUI() {
 
     btnFlattenLayers.addEventListener('click', function (event) {
         fallterLayersToBottomLayer();
+        updateLayerListSelectedItem(layersManager.current);
     });
 
     layerList.addEventListener('click', function (event) {
@@ -28,6 +29,7 @@ function initializeLayerUI() {
             // display this layer/ make it active
         } else if (element && element.className.indexOf('list-item-remove-btn') >= 0) {
             removeLayer(element);
+            updateLayerListSelectedItem(layersManager.current);
         } else {
             return;
         }
