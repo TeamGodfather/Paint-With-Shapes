@@ -21,10 +21,41 @@ function addLayerListItem(id) {
 
     listId = document.createElement('a');
     listId.href = '#';
-    listId.innerHTML = `Layer ${id}`;
+    listId.className = 'list-item-id';
+    listId.innerHTML = `${id}`;
+
+    listRemoveBtn = document.createElement('a');
+    listRemoveBtn.href = '#';
+    listRemoveBtn.className = 'list-item-remove-btn';
+    listRemoveBtn.innerHTML = 'remove';
 
     listItem.appendChild(listId);
+    listItem.appendChild(listRemoveBtn);
 
     document.querySelector('#layer-manager #layer-list')
         .appendChild(listItem);
+}
+
+function removeLayer(layerListItem) {
+    var parent = layerListItem,
+        i;
+
+    while (parent && parent.className.indexOf('layer-list-item') < 0) {
+        parent = parent.parentNode;
+    }
+    if (!parent) {
+        return;
+    }
+
+    var id = parent.querySelector('.list-item-id').innerHTML;
+    for (i = 0; i < layersManager.allLayers.length; i += 1) {
+        if (layersManager.allLayers[i].id === +id) {
+            layersManager.allLayers[i].layer.removeChildren();
+            layersManager.allLayers[i].layer.draw();
+            layersManager.allLayers[i].layer.remove();
+            layersManager.allLayers.splice(i, 1);
+            break;
+        }
+    }
+    parent.parentNode.removeChild(parent);
 }
