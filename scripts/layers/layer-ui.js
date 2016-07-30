@@ -29,7 +29,6 @@ function initializeLayerUI() {
         var element = event.target,
             currentId;
         if (element && element.className.indexOf('list-item-id') >= 0) {
-            // display this layer/ make it active
             currentId = element.innerHTML;
             setActiveLayer(currentId);
             updateLayerListSelectedItem(layersManager.current);
