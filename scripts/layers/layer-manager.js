@@ -91,9 +91,30 @@ function fallterLayersToBottomLayer() {
         layersManager.allLayers[0].layer.draw();
         layersManager.allLayers[layerNr].layer.draw();
         layersManager.allLayers[layerNr].layer.remove();
+        layersManager.allLayers[layerNr].layer.destroy();
     }
     layersManager.allLayers.splice(1);
     layersManager.current = layersManager.allLayers[0];
     document.querySelector('#layer-manager #layer-list').innerHTML = '';
     addLayerListItem(layersManager.allLayers[0].id);
+}
+
+function updateLayerListSelectedItem(currentLayer) {
+    var layerListItems = $('#layer-list').children(),
+        i;
+
+    console.log(currentLayer);
+    var currentId = +currentLayer.id;
+    for (i = 0; i < layerListItems.length; i += 1) {
+        var id = $(layerListItems[i]).children('.list-item-id').html();
+
+        if ($(layerListItems[i]).hasClass('selected')) {
+            $(layerListItems[i]).removeClass('selected');
+            console.log('removed');
+        }
+        if (currentId === +id) {
+            $(layerListItems[i]).addClass('selected');
+            console.log('added');
+        }
+    }
 }

@@ -43,6 +43,10 @@ body div#root section#layer-manager ul {
   text-align: left;
   margin: 10px 0 10px 0;
 }
+body div#root section#layer-manager ul li {
+  border-radius: 15px;
+  text-align: center;
+}
 body div#root section#layer-manager ul li a {
   padding: 5px;
 }
@@ -52,6 +56,26 @@ body div#root section#layer-manager ul li a.list-item-remove-btn {
 }
 body div#root section#layer-manager ul li a.list-item-id {
   color: #000;
+}
+body div#root section#layer-manager ul li.selected {
+  background-color: #ffc966;
+}
+body div#root section#layer-manager ul li:hover {
+  background-color: #ffdb99;
+}
+body div#root section#clear {
+  position: fixed;
+}
+body div#root section#clear a#new-canvas-btn {
+  padding: 15px 10px;
+  text-decoration: none;
+  background-color: #9acd32;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 18px;
+}
+body div#root section#clear a#new-canvas-btn:hover {
+  background-color: #aed75b;
 }
 body div#root section#ui {
   position: fixed;
