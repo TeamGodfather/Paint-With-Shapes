@@ -1,4 +1,6 @@
-# Shapes
+# [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+
+[youtube demo](https://youtu.be/k3h-ivpfPS0?t=9s)
 
 ## Current Controls
   - Enter commit shape to layer
