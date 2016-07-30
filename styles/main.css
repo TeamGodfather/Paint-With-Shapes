@@ -3,7 +3,19 @@
   margin: auto;
 }
 body div#root section#canvas-container {
-  width: 960px;
-  height: 540px;
   border: 1px solid #000;
+}
+body div#root section#layer-manager {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+body div#root section#layer-manager ul {
+  list-style: none;
+  height: 200px;
+  width: 150px;
+  overflow-y: auto;
+}
+body div#root section#ui {
+  position: fixed;
 }

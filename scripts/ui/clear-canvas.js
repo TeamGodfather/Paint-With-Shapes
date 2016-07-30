@@ -16,6 +16,8 @@ function initializeClearCanvasButton() {
             };
 
             currentColor = '#cc00cc';
+
+            document.querySelector('#layer-list').innerHTML = '';
         });
 
     var btnToggleColor = document

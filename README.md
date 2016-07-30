@@ -1,4 +1,8 @@
-# Shapes
+# [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+
+[Mona Lisa demo](https://youtu.be/k3h-ivpfPS0?t=9s)
+[Prince demo](https://www.youtube.com/watch?v=JPPB51vI1XE)
+[Iron Man demo](https://www.youtube.com/watch?v=AkHjRe1ZRKQ)
 
 ## Current Controls
   - Enter commit shape to layer
@@ -17,21 +21,21 @@
 3. Color Picker
     - pick the current color
     - return the color as string
-4. Rotate Shape
+4. Rotate Shape - done
     - parameter shape 
     - return the resulting shape
     - left / right arrow
-5. Scale Shape
+5. Scale Shape - done
     - parameter shape
     - return the scaled shape
     - up / down arrow
-5. Shape Opacity
+5. Shape Opacity - done
 6. UI Visual Controls
     - rotate shape
     - scale shape 
     - control opacity
     - commit shape to layer
-6. Add Shape to Layer
+6. Add Shape to Layer - done
     - place the current shape to the current layer
     - mouse click at current position
 6. Create new Layer
