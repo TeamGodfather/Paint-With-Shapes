@@ -1,6 +1,8 @@
 # [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
 [Mona Lisa demo](https://youtu.be/k3h-ivpfPS0?t=9s)
+[Prince demo](https://www.youtube.com/watch?v=JPPB51vI1XE)
+[Iron Man demo](https://www.youtube.com/watch?v=AkHjRe1ZRKQ)
 
 ## Current Controls
   - Enter commit shape to layer
