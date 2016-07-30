@@ -31,7 +31,7 @@ body div#root section#layer-manager a#create-layer {
 body div#root section#layer-manager ul {
   list-style: none;
   height: 100px;
-  width: 60px;
+  width: 80px;
   overflow-y: auto;
 }
 body div#root section#layer-manager ul li a {
