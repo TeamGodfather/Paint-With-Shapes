@@ -16,7 +16,6 @@ function initializeLayerUI() {
 
     layerList.addEventListener('click', function (event) {
         var element = event.target;
-        console.log(event);
         if (element && element.className.indexOf('list-item-id') >= 0) {
             // display this layer/ make it active
         } else if (element && element.className.indexOf('list-item-remove-btn') >= 0) {

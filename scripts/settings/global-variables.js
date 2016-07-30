@@ -6,7 +6,6 @@ var kineticStage,
         container: 'canvas-container'
     },
 
-
     layersManager = {
         'allLayers': [],
         'current': null
