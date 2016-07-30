@@ -91,8 +91,10 @@ function fallterLayersToBottomLayer() {
         layersManager.allLayers[0].layer.draw();
         layersManager.allLayers[layerNr].layer.draw();
         layersManager.allLayers[layerNr].layer.remove();
-        layersManager.allLayers.splice(layerNr, 1);
     }
+    layersManager.allLayers.splice(1);
+    layersManager.current = layersManager.allLayers[0];
     document.querySelector('#layer-manager #layer-list').innerHTML = '';
     addLayerListItem(layersManager.allLayers[0].id);
+    console.log(layersManager);
 }
