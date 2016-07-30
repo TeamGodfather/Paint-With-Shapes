@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shapes</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/settings/global-variables.js"></script>
+
+    <script src="scripts/layers/layer-manager.js"></script>
+    <script src="scripts/layers/layer-ui.js"></script>
+
+    <script src="scripts/shapes/shapes-menu.js"></script>
+    <script src="scripts/shapes/get-shape.js"></script>
+    <script src="scripts/shapes/shape-factory/rectangle.js"></script>
+
+    <script src="scripts/controls/keyboard-controls.js"></script>
+
+    <script src="scripts/colorpicker/get-color.js"></script>
+
+    <script src="scripts/ui/clear-canvas.js"></script>
+
+    <script src="scripts/utils/id-provider.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <section id="canvas-container">
+
+        </section>
+
+        <section id="ui">
+            <a href="#" class="button" id="clear-canvas">clear canvas</a>
+            <a href="#" class="button" id="create-layer">create layer</a>
+            <!-- temporary for testing  -->
+            <a href="#" class="button" id="get-shape">create shape</a>
+            <a href="#" class="button" id="toggle-color">toggle color</a>
+
+        </section>
+    </div>
+</body>
+
+</html>
