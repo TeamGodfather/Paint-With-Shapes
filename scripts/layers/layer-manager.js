@@ -91,6 +91,7 @@ function fallterLayersToBottomLayer() {
         layersManager.allLayers[0].layer.draw();
         layersManager.allLayers[layerNr].layer.draw();
         layersManager.allLayers[layerNr].layer.remove();
+        layersManager.allLayers[layerNr].layer.destroy();
     }
     layersManager.allLayers.splice(1);
     layersManager.current = layersManager.allLayers[0];
