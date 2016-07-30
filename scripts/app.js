@@ -8,6 +8,7 @@ $(function () {
     initializeKeyboardControls();
     initializeClearCanvasButton();
     inializeButtonsPositions();
+    initializeDraggableMenus();
 });
 
 function intializeCanvas(options) {
