@@ -96,5 +96,4 @@ function fallterLayersToBottomLayer() {
     layersManager.current = layersManager.allLayers[0];
     document.querySelector('#layer-manager #layer-list').innerHTML = '';
     addLayerListItem(layersManager.allLayers[0].id);
-    console.log(layersManager);
 }
