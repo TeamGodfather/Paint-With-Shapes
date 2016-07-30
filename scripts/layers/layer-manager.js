@@ -27,10 +27,10 @@ function addLayerListItem(id) {
     listRemoveBtn = document.createElement('a');
     listRemoveBtn.href = '#';
     listRemoveBtn.className = 'list-item-remove-btn';
-    listRemoveBtn.innerHTML = 'remove';
+    listRemoveBtn.innerHTML = 'X';
 
-    listItem.appendChild(listId);
     listItem.appendChild(listRemoveBtn);
+    listItem.appendChild(listId);
 
     document.querySelector('#layer-manager #layer-list')
         .appendChild(listItem);

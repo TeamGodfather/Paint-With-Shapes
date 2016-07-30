@@ -1,6 +1,7 @@
 *
     padding 0
     margin auto
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 body
 
@@ -13,12 +14,39 @@ body
             position fixed
             top 30px
             left 30px 
+            padding 10px
+            border 1px solid black
+            border-radius 10px
+
+            h2
+                font-size: 16px
+                font-weight normal
+
+            a
+                text-decoration none
+
+                &:hover
+                    text-decoration underline
+            
+            a#create-layer
+                font-size: 22px
+                color yellowgreen
 
             ul
                 list-style none
-                height 200px
-                width 150px
+                height 100px
+                width 60px
                 overflow-y auto
+
+                li
+                    a
+                        padding 5px
+
+                    a.list-item-remove-btn
+                        color red
+
+                    a.list-item-id
+                        color black
 
         section#ui
             position fixed

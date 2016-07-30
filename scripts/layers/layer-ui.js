@@ -26,7 +26,7 @@ function initializeLayerUI() {
     });
 
     layerUiContainer = document.querySelector('#layer-manager');
-    layerUiContainer.style.left = canvasOptions.width - 200 + 'px';
+    layerUiContainer.style.left = canvasOptions.width - 100 + 'px';
 }
 
 
