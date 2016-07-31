@@ -49,3 +49,4 @@
 8. Publish Drawing
    - facebook
    - twitter
+9. Import background picure from link
