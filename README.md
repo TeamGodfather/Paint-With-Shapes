@@ -50,4 +50,5 @@
    - facebook
    - twitter
 9. Import background picure from link
-10. Control movement with keyboard
+10. Control shape entirely with keyboard in addition to full UI controls
+11. Stickers
