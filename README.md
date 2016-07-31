@@ -50,3 +50,4 @@
    - facebook
    - twitter
 9. Import background picure from link
+10. Control movement with keyboard
