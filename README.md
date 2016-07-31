@@ -52,3 +52,4 @@
 9. Import background picure from link
 10. Control shape entirely with keyboard in addition to full UI controls
 11. Stickers
+   - apply image as a shape
