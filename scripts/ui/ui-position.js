@@ -4,7 +4,12 @@ function inializeButtonsPositions() {
     uiElement.style.left = '30px';
 
     var newDrawingBtn = document.querySelector('#clear');
-    newDrawingBtn.style.top = canvasOptions.height - 50 + 'px';
-    newDrawingBtn.style.left = canvasOptions.width - 75 + 'px';
-    
+    newDrawingBtn.style.top = window.innerHeight - 50 + 'px';
+    newDrawingBtn.style.left = window.innerWidth - 75 + 'px';
+}
+
+function updateNewDrawingBtnPosition() {
+    var newDrawingBtn = document.querySelector('#clear');
+    newDrawingBtn.style.top = window.innerHeight - 50 + 'px';
+    newDrawingBtn.style.left = window.innerWidth - 75 + 'px';
 }
