@@ -21,7 +21,7 @@ function initializeLayerUI() {
 
     btnFlattenLayers.addEventListener('click', function (event) {
         fallterLayersToBottomLayer();
-        setActiveLayer(0);        
+        setActiveLayer(0);
         updateLayerListSelectedItem(layersManager.current);
     });
 
@@ -35,7 +35,7 @@ function initializeLayerUI() {
         } else if (element && element.className.indexOf('list-item-remove-btn') >= 0) {
             removeLayer(element);
             updateLayerListSelectedItem(layersManager.current);
-            setActiveLayer(layersManager.current.id);            
+            setActiveLayer(layersManager.current.id);
         } else {
             return;
         }
@@ -43,6 +43,32 @@ function initializeLayerUI() {
 
     layerUiContainer = document.querySelector('#layer-manager');
     layerUiContainer.style.left = canvasOptions.width - 100 + 'px';
+    layerUiContainer.style.top = 30 + 'px';
+}
+
+function updateLayerUiContainerPosition() {
+    var layerUiContainer = document.querySelector('#layer-manager'),
+
+        currentLeft = layerUiContainer.style.left,
+        currentWidth = layerUiContainer.style.width,
+
+        currentTop = layerUiContainer.style.top,
+        currentHeight = layerUiContainer.style.width,
+
+        currentWindowWdith = window.innerWidth,
+        currentWindowHeight = window.innerHeight;
+
+    currentLeft = currentLeft.substr(0, currentLeft.length - 2);
+    currentTop = currentTop.substr(0, currentTop.length - 2);
+// debugger;
+    if (+currentLeft + 80 > currentWindowWdith) {
+        layerUiContainer.style.left = (currentWindowWdith - 20 - 80) + 'px';
+    }
+
+    if (+currentTop + 160 > currentWindowHeight) {
+        layerUiContainer.style.top = (currentWindowHeight - 20 - 160) + 'px';
+    }
+    
 }
 
 

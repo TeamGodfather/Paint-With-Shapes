@@ -9,6 +9,9 @@ $(function () {
     initializeClearCanvasButton();
     inializeButtonsPositions();
     initializeDraggableMenus();
+
+    //test 
+    initializeOnResize();
 });
 
 function intializeCanvas(options) {
@@ -18,4 +21,15 @@ function intializeCanvas(options) {
         height: options.height
     });
     return stage;
+}
+
+function initializeOnResize() {
+    $(window).on('resize', function () {
+        console.log(kineticStage.getSize());
+        kineticStage.setSize({
+            width: window.innerWidth - 10,
+            height: window.innerHeight - 10
+        });
+        updateLayerUiContainerPosition();
+    });
 }

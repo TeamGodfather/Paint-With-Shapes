@@ -1,7 +1,7 @@
 function createRectangle() {
     var rect = new Kinetic.Rect({
-        x: canvasOptions.width / 2,
-        y: canvasOptions.height / 2,
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2,
         width: 100,
         height: 100,
         fill: currentColor,
