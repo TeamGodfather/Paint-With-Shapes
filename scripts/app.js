@@ -28,5 +28,6 @@ function initializeOnResize() {
             height: window.innerHeight - 10
         });
         updateLayerUiContainerPosition();
+        updateNewDrawingBtnPosition();
     });
 }
