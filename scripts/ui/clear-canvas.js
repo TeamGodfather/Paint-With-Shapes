@@ -15,6 +15,7 @@ function initializeClearCanvasButton() {
                 'tempLayer': null
             };
 
+            currentLayerId = 0;
             currentColor = '#cc00cc';
             document.querySelector('#layer-list').innerHTML = '';
         });
