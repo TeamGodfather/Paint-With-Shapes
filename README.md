@@ -18,6 +18,7 @@
 2. Choose a Shape menu
     - menu to pick a shape
     - instantiate the shape
+    - [proposed list of shapes(work in progress)](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/Shapes.md)
 3. Color Picker
     - pick the current color
     - return the color as string
