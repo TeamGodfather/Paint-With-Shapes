@@ -60,7 +60,7 @@ function updateLayerUiContainerPosition() {
 
     currentLeft = currentLeft.substr(0, currentLeft.length - 2);
     currentTop = currentTop.substr(0, currentTop.length - 2);
-// debugger;
+
     if (+currentLeft + 80 > currentWindowWdith) {
         layerUiContainer.style.left = (currentWindowWdith - 20 - 80) + 'px';
     }
