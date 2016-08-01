@@ -55,3 +55,4 @@
 11. Stickers
    - apply image as a shape
 12. Resize canvas
+13. Text
