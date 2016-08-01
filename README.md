@@ -54,3 +54,4 @@
 10. Control shape entirely with keyboard in addition to full UI controls
 11. Stickers
    - apply image as a shape
+12. Resize canvas
