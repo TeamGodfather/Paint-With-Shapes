@@ -1,10 +1,11 @@
 # [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
+## [list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
+
 [Mona Lisa demo](https://youtu.be/k3h-ivpfPS0?t=9s)
 [Prince demo](https://www.youtube.com/watch?v=JPPB51vI1XE)
 [Iron Man demo](https://www.youtube.com/watch?v=AkHjRe1ZRKQ)
 
-[list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
 
 ## Current Controls
   - Enter commit shape to layer
