@@ -6,7 +6,11 @@
     <title>Paint With Shapes</title>
 
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/shape-controls.css">
+    
+    <link rel="stylesheet" type="text/css" href="styles/emoticons-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/shape-controls.css">    
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
@@ -24,14 +28,20 @@
     <script src="scripts/shapes/shapes-menu.js"></script>
     <script src="scripts/shapes/get-shape.js"></script>
     <script src="scripts/shapes/shape-factory/rectangle.js"></script>
+    <script src="scripts/shapes/shape-factory/line.js"></script>
+    <script src="scripts/shapes/shape-factory/star.js"></script>
 
     <script src="scripts/controls/keyboard-controls.js"></script>
+    <script src="scripts/controls/mouse-controls.js"></script>
 
     <script src="scripts/colorpicker/get-color.js"></script>
 
     <script src="scripts/ui/clear-canvas.js"></script>
     <script src="scripts/ui/ui-position.js"></script>
     <script src="scripts/ui/draggable-menus.js"></script>
+    <script src="scripts/ui/get-emoticons.js"></script>
+    <script src="scripts/ui/save-button.js"></script>
+    <script src="scripts/ui/undo-button.js"></script>
 
     <script src="scripts/ui/shape-controls/global-variables.js"></script>
     <script src="scripts/ui/shape-controls/initialize.js"></script>
@@ -61,10 +71,53 @@
 
         <section id="ui">
             <!-- temporary for testing  -->
-            <a href="#" class="button" id="get-shape">Create shape</a>
-            <a href="#" class="button" id="toggle-color">Toggle color</a>
-            <a href="#" class="button" id="get-emoticons">Create emoticon</a>
-            <a href="#" class="button" id="save">Save</a>
+            <ul id="buttons">
+                <li>
+                    <a href="#" class="button, button-style" id="get-shape">Create shape</a>
+                </li>
+                <li>
+                    <a href="#" class="button, button-style" id="toggle-color">Toggle color</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="button, button-style" id="emoticons-button" onclick="dropDown()">Emoticons</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <img src="images/blink.png"/>
+                        <img src="images/crying.png"/>
+                        <img src="images/inlove.png"/>
+                        <img src="images/laughing.png"/>
+                        <img src="images/sick.png"/>
+                        <img src="images/smile.png"/>
+                        <img src="images/amazed.png"/>
+                        <img src="images/angry.png"/>
+                        <img src="images/big-eyes.png"/>
+                        <img src="images/confused.png"/>
+                        <img src="images/dissapointed.png"/>
+                        <img src="images/eating.png"/>
+                        <img src="images/haha.png"/>
+                        <img src="images/happy.png"/>
+                        <img src="images/happy2.png"/>
+                        <img src="images/headache.png"/>
+                        <img src="images/hot.png"/>
+                        <img src="images/kiss.png"/>
+                        <img src="images/mouth.png"/>
+                        <img src="images/nerd.png"/>
+                        <img src="images/none.png"/>
+                        <img src="images/pissed-off.png"/>
+                        <img src="images/pleased.png"/>
+                        <img src="images/satisfied.png"/>
+                        <img src="images/shiny.png"/>
+                        <img src="images/shy.png"/>
+                        <img src="images/smily.png"/>
+                        <img src="images/star.png"/>
+                        <img src="images/tired.png"/>
+                        <img src="images/toungy.png"/>
+                        <img src="images/worried.png"/>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="button, button-style" id="save">Save</a>
+                </li>
+            </ul>
         </section>
     </div>
 </body>
