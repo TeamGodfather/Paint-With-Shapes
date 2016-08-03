@@ -1,0 +1,19 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: -250px;
+    background-color: #fff;
+    max-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-content img:hover {
+    cursor: pointer;
+}
+
+.show {display:block;}

@@ -95,7 +95,12 @@ body div#root section#ui {
   position: fixed;
 }
 
-#get-shape, #toggle-color, #save, #new-canvas-btn, #get-emoticons {
+ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.button-style {
     float: left;
     margin-left: 5px;
     background: #9acd32;
@@ -118,7 +123,7 @@ body div#root section#ui {
   text-decoration: none;
 }
 
-#get-shape:hover, #toggle-color:hover, #save:hover, #new-canvas-btn:hover, #get-emoticons:hover {
+.button-style:hover {
     background: #aed75b;
     background-image: -webkit-linear-gradient(top, #aed75b, #bdde76);
     background-image: -moz-linear-gradient(top, #aed75b, #bdde76);
