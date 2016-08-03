@@ -7,4 +7,6 @@ function initializeDraggableMenus() {
             minHeight: 300,
             minWidth: 80
         });
+
+    shapeControls.container.draggable();    
 }

@@ -1,0 +1,44 @@
+#shape-controls {
+  position: absolute;
+  display: block;
+  width: 195px;
+  height: 120px;
+  top: 50px;
+  left: 50px;
+  border: 1px solid #000;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  padding: 5px;
+}
+#shape-controls a.btn-shape-control {
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: #000;
+  position: absolute;
+}
+#shape-controls a.btn-shape-control#btn-down {
+  top: 85px;
+  left: 80px;
+}
+#shape-controls a.btn-shape-control#btn-up {
+  top: 5px;
+  left: 80px;
+}
+#shape-controls a.btn-shape-control#btn-left {
+  top: 45px;
+  left: 40px;
+}
+#shape-controls a.btn-shape-control#btn-right {
+  top: 45px;
+  left: 120px;
+}
+#shape-controls a.btn-shape-control#btn-rotate-clockwise {
+  top: 85px;
+  left: 160px;
+}
+#shape-controls a.btn-shape-control#btn-rotate-counter-clockwise {
+  top: 5px;
+  left: 5px;
+}
