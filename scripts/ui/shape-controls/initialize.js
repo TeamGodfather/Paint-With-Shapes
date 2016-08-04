@@ -4,6 +4,10 @@ var shapeControls = {
     'btnDown': null,
     'btnLeft': null,
     'btnRight': null,
+    'btnUpLeft': null,
+    'btnUpRight': null,
+    'btnDownLeft': null,
+    'btnDownRight': null,
     'btnRotateClockwise': null,
     'btnRotateCounterClockwise': null,
     'btnScaleIncrease': null,
@@ -63,6 +67,30 @@ function buildShapeControlsElements() {
         .addClass('btn-shape-control')
         .html('R');
 
+    shapeControls.btnUpLeft = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-up-left')
+        .addClass('btn-shape-control')
+        .html('UL');
+
+    shapeControls.btnUpRight = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-up-right')
+        .addClass('btn-shape-control')
+        .html('UR');
+
+    shapeControls.btnDownLeft = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-down-left')
+        .addClass('btn-shape-control')
+        .html('DL');
+
+    shapeControls.btnDownRight = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-down-right')
+        .addClass('btn-shape-control')
+        .html('DR');
+
     shapeControls.btnRotateClockwise = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-rotate-clockwise')
@@ -106,10 +134,14 @@ function buildShapeControlsElements() {
         .html('commit to layer');
 
     shapeControls.sectionMovement
+        .append(shapeControls.btnUpLeft)
         .append(shapeControls.btnUp)
+        .append(shapeControls.btnUpRight)
+        .append(shapeControls.btnRight)
+        .append(shapeControls.btnDownRight)
         .append(shapeControls.btnDown)
-        .append(shapeControls.btnLeft)
-        .append(shapeControls.btnRight);
+        .append(shapeControls.btnDownLeft)
+        .append(shapeControls.btnLeft);
 
     shapeControls.sectionRotate
         .append(shapeControls.btnRotateCounterClockwise)
@@ -168,10 +200,42 @@ function initializeShapeControlsEvents() {
         changeCurrentShapeOpacity(-0.05);
     });
 
+    shapeControls.btnUpLeft.on('click', function () {
+        var delta = {
+            'x': -5,
+            'y': -5
+        };
+        moveCurrentActiveShape(delta);
+    });
+
     shapeControls.btnUp.on('click', function () {
         var delta = {
             'x': 0,
             'y': -5
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnUpRight.on('click', function () {
+        var delta = {
+            'x': 5,
+            'y': -5
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnRight.on('click', function () {
+        var delta = {
+            'x': +5,
+            'y': 0
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnDownRight.on('click', function () {
+        var delta = {
+            'x': +5,
+            'y': +5
         };
         moveCurrentActiveShape(delta);
     });
@@ -184,17 +248,17 @@ function initializeShapeControlsEvents() {
         moveCurrentActiveShape(delta);
     });
 
-    shapeControls.btnLeft.on('click', function () {
+    shapeControls.btnDownLeft.on('click', function () {
         var delta = {
             'x': -5,
-            'y': 0
+            'y': -5
         };
         moveCurrentActiveShape(delta);
     });
 
-    shapeControls.btnRight.on('click', function () {
+    shapeControls.btnLeft.on('click', function () {
         var delta = {
-            'x': +5,
+            'x': -5,
             'y': 0
         };
         moveCurrentActiveShape(delta);
