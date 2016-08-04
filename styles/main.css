@@ -16,6 +16,14 @@ body div#root section#layer-manager {
   border: 1px solid #000;
   border-radius: 10px;
   text-align: center;
+    color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9acd32+0,aecc6e+100 */
+    background: rgb(154,205,50); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(154,205,50,1) 0%, rgba(174,204,110,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(154,205,50,1) 0%,rgba(174,204,110,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(154,205,50,1) 0%,rgba(174,204,110,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9acd32', endColorstr='#aecc6e',GradientType=0 ); /* IE6-9 */
+    box-shadow: 2px 2px grey;
 }
 body div#root section#layer-manager h2 {
   font-size: 16px;
@@ -29,11 +37,12 @@ body div#root section#layer-manager a:hover {
 }
 body div#root section#layer-manager a#create-layer {
   font-size: 22px;
-  color: #9acd32;
+  color: #fff;
+
 }
 body div#root section#layer-manager a#flatten-layers {
   margin-bottom: 5px;
-  color: #000;
+  color: #fff;
 }
 body div#root section#layer-manager ul {
   list-style: none;
@@ -70,7 +79,9 @@ body div#root section#clear {
   position: fixed;
 }
 body div#root section#clear a#new-canvas-btn {
-  padding: 15px 10px;
+    float: right;
+    padding: 15px 10px;
+    margin: -20px 20px 20px -20px;
   text-decoration: none;
   background-color: #9acd32;
   color: #fff;
@@ -82,4 +93,43 @@ body div#root section#clear a#new-canvas-btn:hover {
 }
 body div#root section#ui {
   position: fixed;
+}
+
+ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.button-style {
+    float: left;
+    margin-left: 5px;
+    background: #9acd32;
+    background-image: -webkit-linear-gradient(top, #9acd32, #719425);
+    background-image: -moz-linear-gradient(top, #9acd32, #719425);
+    background-image: -ms-linear-gradient(top, #9acd32, #719425);
+    background-image: -o-linear-gradient(top, #9acd32, #719425);
+    background-image: linear-gradient(to bottom, #9acd32, #719425);
+    -webkit-border-radius: 28%;
+    -moz-border-radius: 28%;
+  border-radius: 20px;
+  text-shadow: 2px 2px 5px #000000;
+  -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+  -moz-box-shadow: 3px 3px 5px #4a4a4a;
+  box-shadow: 3px 3px 5px #4a4a4a;
+  font-family: Georgia, inherit;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.button-style:hover {
+    background: #aed75b;
+    background-image: -webkit-linear-gradient(top, #aed75b, #bdde76);
+    background-image: -moz-linear-gradient(top, #aed75b, #bdde76);
+    background-image: -ms-linear-gradient(top, #aed75b, #bdde76);
+    background-image: -o-linear-gradient(top, #aed75b, #bdde76);
+    background-image: linear-gradient(to bottom, #aed75b, #bdde76);
+    text-decoration: none;
+    cursor: pointer;
 }
