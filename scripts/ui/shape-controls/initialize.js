@@ -6,6 +6,10 @@ var shapeControls = {
     'btnRight': null,
     'btnRotateClockwise': null,
     'btnRotateCounterClockwise': null,
+    'btnScaleIncrease': null,
+    'btnScaleDecrease': null,
+    'btnOpacityIncrease': null,
+    'btnOpacityDecrease': null,
     'btnCommit': null,
     'sectionMovement': null,
     'sectionRotate': null,
@@ -71,6 +75,18 @@ function buildShapeControlsElements() {
         .addClass('btn-shape-control')
         .html('RL');
 
+    shapeControls.btnScaleIncrease = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-scale-increase')
+        .addClass('btn-shape-control')
+        .html('+');
+
+    shapeControls.btnScaleDecrease = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-scale-decrease')
+        .addClass('btn-shape-control')
+        .html('-');
+
     shapeControls.btnCommit = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-commit')
@@ -84,8 +100,12 @@ function buildShapeControlsElements() {
         .append(shapeControls.btnRight);
 
     shapeControls.sectionRotate
-        .append(shapeControls.btnRotateClockwise)
         .append(shapeControls.btnRotateCounterClockwise)
+        .append(shapeControls.btnRotateClockwise);
+
+    shapeControls.sectionScale
+        .append(shapeControls.btnScaleIncrease)
+        .append(shapeControls.btnScaleDecrease);
 
     shapeControls.container
         .append($('<p />').html('move'))
@@ -114,5 +134,13 @@ function initializeShapeControlsEvents() {
 
     shapeControls.btnCommit.on('click', function () {
         releaseCurrentShape();
+    });
+
+    shapeControls.btnScaleIncrease.on('click', function () {
+        scaleCurrentShape(0.05);
+    });
+
+    shapeControls.btnScaleDecrease.on('click', function () {
+        scaleCurrentShape(-0.05);
     });
 }
