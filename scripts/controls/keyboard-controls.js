@@ -20,10 +20,8 @@ function initializeKeyboardControls() {
                 // enter - > confirm position
                 releaseCurrentShape();
             } else if (event.keyCode === 219) {
-                // enter - > confirm position
                 changeCurrentShapeOpacity(-0.05);
             } else if (event.keyCode === 221) {
-                // enter - > confirm position
                 changeCurrentShapeOpacity(0.05);
             }
         });

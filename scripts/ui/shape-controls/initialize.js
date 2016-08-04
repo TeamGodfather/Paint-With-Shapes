@@ -87,6 +87,18 @@ function buildShapeControlsElements() {
         .addClass('btn-shape-control')
         .html('-');
 
+    shapeControls.btnOpacityIncrease = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-opacity-increase')
+        .addClass('btn-shape-control')
+        .html('+');
+
+    shapeControls.btnOpacityDecrease = $('<a />')
+        .attr('href', '#')
+        .attr('id', 'btn-opacity-decrease')
+        .addClass('btn-shape-control')
+        .html('-');
+
     shapeControls.btnCommit = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-commit')
@@ -104,8 +116,12 @@ function buildShapeControlsElements() {
         .append(shapeControls.btnRotateClockwise);
 
     shapeControls.sectionScale
-        .append(shapeControls.btnScaleIncrease)
-        .append(shapeControls.btnScaleDecrease);
+        .append(shapeControls.btnScaleDecrease)
+        .append(shapeControls.btnScaleIncrease);
+
+    shapeControls.sectionOpacity
+        .append(shapeControls.btnOpacityDecrease)
+        .append(shapeControls.btnOpacityIncrease);
 
     shapeControls.container
         .append($('<p />').html('move'))
@@ -143,4 +159,53 @@ function initializeShapeControlsEvents() {
     shapeControls.btnScaleDecrease.on('click', function () {
         scaleCurrentShape(-0.05);
     });
+
+    shapeControls.btnOpacityIncrease.on('click', function () {
+        changeCurrentShapeOpacity(0.05);
+    });
+
+    shapeControls.btnOpacityDecrease.on('click', function () {
+        changeCurrentShapeOpacity(-0.05);
+    });
+
+    shapeControls.btnUp.on('click', function () {
+        var delta = {
+            'x': 0,
+            'y': -5
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnDown.on('click', function () {
+        var delta = {
+            'x': 0,
+            'y': +5
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnLeft.on('click', function () {
+        var delta = {
+            'x': -5,
+            'y': 0
+        };
+        moveCurrentActiveShape(delta);
+    });
+
+    shapeControls.btnRight.on('click', function () {
+        var delta = {
+            'x': +5,
+            'y': 0
+        };
+        moveCurrentActiveShape(delta);
+    });
+}
+
+function moveCurrentActiveShape(delta) {
+    var position = currentActiveShape.shape.getPosition();
+    currentActiveShape.shape.setPosition({
+        x: position.x + delta.x,
+        y: position.y + delta.y
+    });
+    currentActiveShape.tempLayer.draw();
 }
