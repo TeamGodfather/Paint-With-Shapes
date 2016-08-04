@@ -85,3 +85,12 @@ function scaleCurrentShape(scale) {
     });
     currentActiveShape.tempLayer.draw();
 }
+
+function moveCurrentActiveShape(delta) {
+    var position = currentActiveShape.shape.getPosition();
+    currentActiveShape.shape.setPosition({
+        x: position.x + delta.x,
+        y: position.y + delta.y
+    });
+    currentActiveShape.tempLayer.draw();
+}
