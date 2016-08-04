@@ -251,7 +251,7 @@ function initializeShapeControlsEvents() {
     shapeControls.btnDownLeft.on('click', function () {
         var delta = {
             'x': -5,
-            'y': -5
+            'y': +5
         };
         moveCurrentActiveShape(delta);
     });
