@@ -151,7 +151,7 @@ function checkOutOfCanvasBoundsTop() {
         shapeActualSize = getShapeCurrentSizeDependingOnScale(),
         shapePosition = currentActiveShape.shape.getPosition();
 
-    if (shapePosition.y - shapeActualSize.height / 2 <= 0) {
+    if (shapePosition.y <= 0) {
         isInsideCanvas = false;
     }
     return isInsideCanvas;
@@ -162,7 +162,7 @@ function checkOutOfCanvasBoundsLeft() {
         shapeActualSize = getShapeCurrentSizeDependingOnScale(),
         shapePosition = currentActiveShape.shape.getPosition();
 
-    if (shapePosition.x - shapeActualSize.width / 2 <= 0) {
+    if (shapePosition.x <= 0) {
         isInsideCanvas = false;
     }
     return isInsideCanvas;
@@ -174,7 +174,7 @@ function checkOutOfCanvasBoundsRight() {
         shapeActualSize = getShapeCurrentSizeDependingOnScale(),
         shapePosition = currentActiveShape.shape.getPosition();
 
-    if (shapePosition.x + shapeActualSize.width / 2 >= stageSize.width) {
+    if (shapePosition.x >= stageSize.width) {
         isInsideCanvas = false;
     }
     return isInsideCanvas;
@@ -186,7 +186,7 @@ function checkOutOfCanvasBoundsBottom() {
         shapeActualSize = getShapeCurrentSizeDependingOnScale(),
         shapePosition = currentActiveShape.shape.getPosition();
 
-    if (shapePosition.y + shapeActualSize.height / 2 >= stageSize.height) {
+    if (shapePosition.y >= stageSize.height) {
         isInsideCanvas = false;
     }
     return isInsideCanvas;
