@@ -9,3 +9,11 @@ function initializeShapesUI() {
         });
 }
 
+function applyNewColorToCurrentActiveShape() {
+    if (!currentActiveShape.shape) {
+        return;
+    }
+
+    currentActiveShape.shape.setFill(currentColor);
+    currentActiveShape.tempLayer.draw();
+}
