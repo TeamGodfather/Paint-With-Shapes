@@ -1,4 +1,4 @@
-function createpentagon() {
+function createPentagon() {
     var pentagon=new Kinetic.RegularPolygon({
 		x: canvasOptions.width / 2,
         y: canvasOptions.height / 2,
