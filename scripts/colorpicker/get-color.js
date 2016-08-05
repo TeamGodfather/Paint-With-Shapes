@@ -91,7 +91,7 @@ function getColor() {
         init(this);
     };
 
-    // imageObj.crossOrigin = '';
+    imageObj.crossOrigin = '';
     imageObj.src = './images/colorpicker.png'
 
 
