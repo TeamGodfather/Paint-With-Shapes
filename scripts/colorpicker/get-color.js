@@ -6,9 +6,6 @@ function getColor() {
     //     currentColor = '#cc00cc';
     // }
 
-
-
-
     var canvasPlace = document.getElementById('colorpicker');
     var canvas = document.createElement('canvas');
     canvas.style.display = 'block';
@@ -19,17 +16,17 @@ function getColor() {
     canvas.height = 256;
     canvas.style.border = '8px solid yellowgreen';
 
-
     function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
         return {
-            x : evt.clientX - rect.left,
-            y : evt.clientY - rect.top
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
         };
     }
 
     function drawColor(color) {
         currentColor = color;
+        applyNewColorToCurrentActiveShape();
     }
 
     function init(imageObj) {
@@ -45,17 +42,18 @@ function getColor() {
         canvas.addEventListener('mousedown', function (evt) {
             mouseDown = true;
 
-            var mousePos = getMousePos(canvas, evt);
+            var color,
+                mousePos = getMousePos(canvas, evt);
 
             // currentColor = undefined;
             color = undefined;
 
-            if(mousePos !== null && mousePos.x > mousePos.x < imageObj.width && mousePos.y > mousePos.y < imageObj.height) {
+            if (mousePos !== null && mousePos.x > mousePos.x < imageObj.width && mousePos.y > mousePos.y < imageObj.height) {
                 var x = mousePos.x;
                 var y = mousePos.y;
                 var imgData = ctx.getImageData(x, y, 1, 1);
                 var data = imgData.data;
-                var color = 'rgb(' + data[0] + ',' + data[1] + ',' + data[2] + ')';
+                color = 'rgb(' + data[0] + ',' + data[1] + ',' + data[2] + ')';
                 drawColor(color);
             }
         }, false);
@@ -65,15 +63,17 @@ function getColor() {
         }, false);
 
         canvas.addEventListener('mousemove', function (evt) {
-            var mousePos = getMousePos(canvas, evt);
+            var color,
+                mousePos = getMousePos(canvas, evt);
+
             // currentColor = undefined;
             color = undefined;
-            if(mouseDown && mousePos !== null && mousePos.x > mousePos.x < imageObj.width && mousePos.y > mousePos.y < imageObj.height) {
+            if (mouseDown && mousePos !== null && mousePos.x > mousePos.x < imageObj.width && mousePos.y > mousePos.y < imageObj.height) {
                 var x = mousePos.x;
                 var y = mousePos.y;
                 var imgData = ctx.getImageData(x, y, 1, 1);
                 var data = imgData.data;
-                var color = 'rgb(' + data[0] + ',' + data[1] + ',' + data[2] + ')';
+                color = 'rgb(' + data[0] + ',' + data[1] + ',' + data[2] + ')';
 
                 drawColor(color);
             }
@@ -81,10 +81,10 @@ function getColor() {
 
         ctx.drawImage(imageObj, 0, 0);
 
-        drawColor('black');
+        // This changes shape coloer, since default is not balck.
+        // Should Shape Default color be black ( can change in global-varialbes.js, initialze currentColor to black/ whatever ) ? 
+        // drawColor('black');
     }
-
-
 
     var imageObj = new Image();
     imageObj.onload = function () {
@@ -92,7 +92,5 @@ function getColor() {
     };
 
     imageObj.crossOrigin = '';
-    imageObj.src = './images/colorpicker.png'
-
-
+    imageObj.src = './images/colorpicker.png';
 }
