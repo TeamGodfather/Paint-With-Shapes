@@ -9,9 +9,9 @@
 
 ## Current Controls
   - Enter commit shape to layer
-  - A / D arrow rotate
-  - W / S arrow size
-  - Q / E opacity
+  - A / D rotate left/ right
+  - W / S increase/ decrease size
+  - Q / E decrease/ increase opacity
   - Up/ Down/ Left/ Right Arrow move shape
   - drag shape with the mouse
 
@@ -57,9 +57,9 @@
 9. Import background picure from link
 10. Control shape entirely with keyboard in addition to full UI controls - done
     - Enter commit shape to layer
-    - A / D arrow rotate
-    - W / S arrow size
-    - Q / E opacity
+    - A / D rotate left/ right
+    - W / S increase/ decrease change size
+    - Q / E decrease/ increase opacity
     - Up/ Down/ Left/ Right Arrow move shape
 11. Stickers
     - emote icons menu - done
