@@ -4,25 +4,32 @@ function initializeKeyboardControls() {
         .addEventListener('keydown', function addKeyboardListener(event) {
             event.preventDefault();
 
-            if (event.keyCode === 37) {
-                // Left
+            if (!currentActiveShape.shape) {
+                return;
+            }
+
+            if (event.keyCode === 65) {
                 rotateCurrentShape(-10);
-            } else if (event.keyCode === 38) {
-                // up
+            } else if (event.keyCode === 87) {
                 scaleCurrentShape(0.05);
-            } else if (event.keyCode === 39) {
-                // right
+            } else if (event.keyCode === 68) {
                 rotateCurrentShape(10)
-            } else if (event.keyCode === 40) {
-                // down
+            } else if (event.keyCode === 83) {
                 scaleCurrentShape(-0.05);
             } else if (event.keyCode === 13) {
-                // enter - > confirm position
                 releaseCurrentShape();
-            } else if (event.keyCode === 219) {
+            } else if (event.keyCode === 81) {
                 changeCurrentShapeOpacity(-0.05);
-            } else if (event.keyCode === 221) {
+            } else if (event.keyCode === 69) {
                 changeCurrentShapeOpacity(0.05);
+            } else if (event.keyCode === 38) {
+                moveCurrentActiveShapeUp();
+            } else if (event.keyCode === 40) {
+                moveCurrentActiveShapeDown();
+            } else if (event.keyCode === 37) {
+                moveCurrentActiveShapeLeft();
+            } else if (event.keyCode === 39) {
+                moveCurrentActiveShapeRight();
             }
         });
 }
@@ -93,4 +100,36 @@ function moveCurrentActiveShape(delta) {
         y: position.y + delta.y
     });
     currentActiveShape.tempLayer.draw();
+}
+
+function moveCurrentActiveShapeLeft() {
+    var delta = {
+        'x': -5,
+        'y': 0
+    };
+    moveCurrentActiveShape(delta);
+}
+
+function moveCurrentActiveShapeDown() {
+    var delta = {
+        'x': 0,
+        'y': +5
+    };
+    moveCurrentActiveShape(delta);
+}
+
+function moveCurrentActiveShapeRight() {
+    var delta = {
+        'x': +5,
+        'y': 0
+    };
+    moveCurrentActiveShape(delta);
+}
+
+function moveCurrentActiveShapeUp() {
+    var delta = {
+        'x': 0,
+        'y': -5
+    };
+    moveCurrentActiveShape(delta);
 }

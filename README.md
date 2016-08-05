@@ -9,9 +9,10 @@
 
 ## Current Controls
   - Enter commit shape to layer
-  - left / right arrow rotate
-  - up / down arrow size
-  - [ / ] opacity
+  - A / D arrow rotate
+  - W / S arrow size
+  - Q / E opacity
+  - Up/ Down/ Left/ Right Arrow move shape
   - drag shape with the mouse
 
 ## Features to be implemented
@@ -34,7 +35,7 @@
     - return the scaled shape
     - up / down arrow
 5. Shape Opacity - done
-6. UI Visual Controls
+6. UI Visual Controls- done ( to be refined )
     - rotate shape
     - scale shape 
     - control opacity
@@ -54,8 +55,14 @@
    - facebook
    - twitter
 9. Import background picure from link
-10. Control shape entirely with keyboard in addition to full UI controls
+10. Control shape entirely with keyboard in addition to full UI controls - done
+    - Enter commit shape to layer
+    - A / D arrow rotate
+    - W / S arrow size
+    - Q / E opacity
+    - Up/ Down/ Left/ Right Arrow move shape
 11. Stickers
-   - apply image as a shape
+    - emote icons menu - done
+    - apply image as a shape
 12. Resize canvas
 13. Text

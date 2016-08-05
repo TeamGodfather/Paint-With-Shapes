@@ -209,11 +209,7 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnUp.on('click', function () {
-        var delta = {
-            'x': 0,
-            'y': -5
-        };
-        moveCurrentActiveShape(delta);
+        moveCurrentActiveShapeUp();
     });
 
     shapeControls.btnUpRight.on('click', function () {
@@ -225,11 +221,7 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnRight.on('click', function () {
-        var delta = {
-            'x': +5,
-            'y': 0
-        };
-        moveCurrentActiveShape(delta);
+        moveCurrentActiveShapeRight();
     });
 
     shapeControls.btnDownRight.on('click', function () {
@@ -241,11 +233,7 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnDown.on('click', function () {
-        var delta = {
-            'x': 0,
-            'y': +5
-        };
-        moveCurrentActiveShape(delta);
+        moveCurrentActiveShapeDown();
     });
 
     shapeControls.btnDownLeft.on('click', function () {
@@ -257,19 +245,6 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnLeft.on('click', function () {
-        var delta = {
-            'x': -5,
-            'y': 0
-        };
-        moveCurrentActiveShape(delta);
+        moveCurrentActiveShapeLeft();
     });
-}
-
-function moveCurrentActiveShape(delta) {
-    var position = currentActiveShape.shape.getPosition();
-    currentActiveShape.shape.setPosition({
-        x: position.x + delta.x,
-        y: position.y + delta.y
-    });
-    currentActiveShape.tempLayer.draw();
 }
