@@ -3,7 +3,8 @@ function initializeKeyboardControls() {
         .querySelector('body')
         .addEventListener('keydown', function addKeyboardListener(event) {
             event.preventDefault();
-
+            console.log(event.key);
+            console.log(event.keyCode);
             if (!currentActiveShape.shape) {
                 return;
             }
@@ -30,8 +31,22 @@ function initializeKeyboardControls() {
                 moveCurrentActiveShapeLeft();
             } else if (event.keyCode === 39) {
                 moveCurrentActiveShapeRight();
+            } else if (event.keyCode === 27) {
+                cancelCurrentActiveShape();
             }
         });
+}
+
+function cancelCurrentActiveShape(){
+    currentActiveShape.shape.remove();
+    currentActiveShape.shape.destroy();
+
+    currentActiveShape.tempLayer.draw();
+    currentActiveShape.tempLayer.remove();
+    currentActiveShape.tempLayer.destroy();
+
+    currentActiveShape.shape = null;
+    currentActiveShape.tempLayer = null;
 }
 
 function changeCurrentShapeOpacity(delta) {
