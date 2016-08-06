@@ -1,4 +1,6 @@
-# [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+# [Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+
+## [Slides](https://cdn.rawgit.com/TeamGodfather/Paint-With-Shapes/e0d1dbe/presentation/index.html#/)
 
 ## [list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
 
@@ -9,10 +11,11 @@
 
 ## Current Controls
   - Enter commit shape to layer
-  - A / D arrow rotate
-  - W / S arrow size
-  - Q / E opacity
+  - A / D rotate left/ right
+  - W / S increase/ decrease size
+  - Q / E decrease/ increase opacity
   - Up/ Down/ Left/ Right Arrow move shape
+  - ESC cancel current shape
   - drag shape with the mouse
 
 ## Features to be implemented
@@ -57,10 +60,11 @@
 9. Import background picure from link
 10. Control shape entirely with keyboard in addition to full UI controls - done
     - Enter commit shape to layer
-    - A / D arrow rotate
-    - W / S arrow size
-    - Q / E opacity
+    - A / D rotate left/ right
+    - W / S increase/ decrease change size
+    - Q / E decrease/ increase opacity
     - Up/ Down/ Left/ Right Arrow move shape
+    - ESC cancel current shape
 11. Stickers
     - emote icons menu - done
     - apply image as a shape

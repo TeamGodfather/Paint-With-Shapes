@@ -95,7 +95,8 @@ body div#root section#ui {
   position: fixed;
 }
 
-ul li {
+/* This only applies to the UL with the buttons at the bottom of the screen*/
+section#ui ul li {
     float: left;
     list-style-type: none;
 }

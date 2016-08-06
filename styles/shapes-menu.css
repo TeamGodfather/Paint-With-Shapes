@@ -1,0 +1,9 @@
+section#shapes-menu {
+  position: fixed;
+  display: none;
+  left: 20px;
+  top: 500px;
+}
+section#shapes-menu ul#shapes {
+  list-style: none;
+}

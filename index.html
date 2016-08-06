@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles/shape-controls.css">
 
+    <link rel="stylesheet" type="text/css" href="styles/shapes-menu.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
@@ -26,10 +28,12 @@
     <script src="scripts/layers/layer-ui.js"></script>
 
     <script src="scripts/shapes/shapes-menu.js"></script>
-    <script src="scripts/shapes/get-shape.js"></script>
     <script src="scripts/shapes/shape-factory/rectangle.js"></script>
     <script src="scripts/shapes/shape-factory/line.js"></script>
     <script src="scripts/shapes/shape-factory/star.js"></script>
+    <script src="scripts/shapes/shape-factory/hexagon.js"></script>
+    <script src="scripts/shapes/shape-factory/pentagon.js"></script>
+    <script src="scripts/shapes/shape-factory/triangle.js"></script>
 
     <script src="scripts/controls/keyboard-controls.js"></script>
     <script src="scripts/controls/mouse-controls.js"></script>
@@ -73,7 +77,7 @@
             <!-- temporary for testing  -->
             <ul id="buttons">
                 <li>
-                    <a href="#" class="button, button-style" id="get-shape">Create shape</a>
+                    <a href="#" class="button, button-style" id="get-shape">Pick A Shape</a>
                 </li>
                 <li>
                     <a href="#" class="button, button-style" id="toggle-color">Toggle color</a>
@@ -116,6 +120,29 @@
                 </li>
                 <li>
                     <a href="#" class="button, button-style" id="save">Save</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="shapes-menu">
+            <ul id="shapes">
+                <li class="shape" id="rectangle">
+                    <a href="#">rectangle</a>
+                </li>
+                <li class="shape" id="star">
+                    <a href="#">star</a>
+                </li>
+                <li class="shape" id="hexagon">
+                    <a href="#">hexagon</a>
+                </li>
+                <li class="shape" id="line">
+                    <a href="#">line</a>
+                </li>
+                <li class="shape" id="pentagon">
+                    <a href="#">pentagon</a>
+                </li>
+                <li class="shape" id="triangle">
+                    <a href="#">triangle</a>
                 </li>
             </ul>
         </section>

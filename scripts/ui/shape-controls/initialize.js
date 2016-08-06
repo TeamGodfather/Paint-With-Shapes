@@ -201,11 +201,16 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnUpLeft.on('click', function () {
-        var delta = {
-            'x': -5,
-            'y': -5
-        };
-        moveCurrentActiveShape(delta);
+        var shapeIsInsideCanvasTop = checkOutOfCanvasBoundsTop(),
+            shapeIsInsideCanvasLeft = checkOutOfCanvasBoundsLeft(),
+            delta = {
+                'x': -5,
+                'y': -5
+            };
+
+        if (shapeIsInsideCanvasTop && shapeIsInsideCanvasLeft) {
+            moveCurrentActiveShape(delta);
+        }
     });
 
     shapeControls.btnUp.on('click', function () {
@@ -213,11 +218,16 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnUpRight.on('click', function () {
-        var delta = {
-            'x': 5,
-            'y': -5
-        };
-        moveCurrentActiveShape(delta);
+        var shapeIsInsideCanvasRight = checkOutOfCanvasBoundsRight(),
+            shapeIsInsideCanvasTop = checkOutOfCanvasBoundsTop(),
+            delta = {
+                'x': 5,
+                'y': -5
+            };
+
+        if (shapeIsInsideCanvasRight && shapeIsInsideCanvasTop) {
+            moveCurrentActiveShape(delta);
+        }
     });
 
     shapeControls.btnRight.on('click', function () {
@@ -225,11 +235,16 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnDownRight.on('click', function () {
-        var delta = {
-            'x': +5,
-            'y': +5
-        };
-        moveCurrentActiveShape(delta);
+        var shapeIsInsideCanvasRight = checkOutOfCanvasBoundsRight(),
+            shapeIsInsideCanvasBottom = checkOutOfCanvasBoundsBottom(),
+            delta = {
+                'x': +5,
+                'y': +5
+            };
+
+        if (shapeIsInsideCanvasRight && shapeIsInsideCanvasBottom) {
+            moveCurrentActiveShape(delta);
+        }
     });
 
     shapeControls.btnDown.on('click', function () {
@@ -237,11 +252,16 @@ function initializeShapeControlsEvents() {
     });
 
     shapeControls.btnDownLeft.on('click', function () {
-        var delta = {
-            'x': -5,
-            'y': +5
-        };
-        moveCurrentActiveShape(delta);
+        var shapeIsInsideCanvasBottom = checkOutOfCanvasBoundsBottom(),
+            shapeIsInsideCanvasLeft = checkOutOfCanvasBoundsLeft(),
+            delta = {
+                'x': -5,
+                'y': +5
+            };
+
+        if (shapeIsInsideCanvasLeft && shapeIsInsideCanvasBottom) {
+            moveCurrentActiveShape(delta);
+        }
     });
 
     shapeControls.btnLeft.on('click', function () {

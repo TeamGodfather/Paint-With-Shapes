@@ -3,7 +3,7 @@ function initializeKeyboardControls() {
         .querySelector('body')
         .addEventListener('keydown', function addKeyboardListener(event) {
             event.preventDefault();
-
+            
             if (!currentActiveShape.shape) {
                 return;
             }
@@ -30,8 +30,22 @@ function initializeKeyboardControls() {
                 moveCurrentActiveShapeLeft();
             } else if (event.keyCode === 39) {
                 moveCurrentActiveShapeRight();
+            } else if (event.keyCode === 27) {
+                cancelCurrentActiveShape();
             }
         });
+}
+
+function cancelCurrentActiveShape(){
+    currentActiveShape.shape.remove();
+    currentActiveShape.shape.destroy();
+
+    currentActiveShape.tempLayer.draw();
+    currentActiveShape.tempLayer.remove();
+    currentActiveShape.tempLayer.destroy();
+
+    currentActiveShape.shape = null;
+    currentActiveShape.tempLayer = null;
 }
 
 function changeCurrentShapeOpacity(delta) {
@@ -103,33 +117,106 @@ function moveCurrentActiveShape(delta) {
 }
 
 function moveCurrentActiveShapeLeft() {
-    var delta = {
-        'x': -5,
-        'y': 0
-    };
-    moveCurrentActiveShape(delta);
+    var shapeIsInsideCanvas = checkOutOfCanvasBoundsLeft(),
+        delta = {
+            'x': -5,
+            'y': 0
+        };
+    if (shapeIsInsideCanvas) {
+        moveCurrentActiveShape(delta);
+    }
 }
 
 function moveCurrentActiveShapeDown() {
-    var delta = {
-        'x': 0,
-        'y': +5
-    };
-    moveCurrentActiveShape(delta);
+    var shapeIsInsideCanvas = checkOutOfCanvasBoundsBottom(),
+        delta = {
+            'x': 0,
+            'y': +5
+        };
+    if (shapeIsInsideCanvas) {
+        moveCurrentActiveShape(delta);
+    }
 }
 
 function moveCurrentActiveShapeRight() {
-    var delta = {
-        'x': +5,
-        'y': 0
-    };
-    moveCurrentActiveShape(delta);
+    var shapeIsInsideCanvas = checkOutOfCanvasBoundsRight(),
+        delta = {
+            'x': +5,
+            'y': 0
+        };
+    if (shapeIsInsideCanvas) {
+        moveCurrentActiveShape(delta);
+    }
 }
 
 function moveCurrentActiveShapeUp() {
-    var delta = {
-        'x': 0,
-        'y': -5
+    var shapeIsInsideCanvas = checkOutOfCanvasBoundsTop(),
+        delta = {
+            'x': 0,
+            'y': -5
+        };
+    if (shapeIsInsideCanvas) {
+        moveCurrentActiveShape(delta);
+    }
+}
+
+function checkOutOfCanvasBoundsTop() {
+    var isInsideCanvas = true,
+        shapeActualSize = getShapeCurrentSizeDependingOnScale(),
+        shapePosition = currentActiveShape.shape.getPosition();
+
+    if (shapePosition.y <= 0) {
+        isInsideCanvas = false;
+    }
+    return isInsideCanvas;
+}
+
+function checkOutOfCanvasBoundsLeft() {
+    var isInsideCanvas = true,
+        shapeActualSize = getShapeCurrentSizeDependingOnScale(),
+        shapePosition = currentActiveShape.shape.getPosition();
+
+    if (shapePosition.x <= 0) {
+        isInsideCanvas = false;
+    }
+    return isInsideCanvas;
+}
+
+function checkOutOfCanvasBoundsRight() {
+    var isInsideCanvas = true,
+        stageSize = kineticStage.getSize(),
+        shapeActualSize = getShapeCurrentSizeDependingOnScale(),
+        shapePosition = currentActiveShape.shape.getPosition();
+
+    if (shapePosition.x >= stageSize.width) {
+        isInsideCanvas = false;
+    }
+    return isInsideCanvas;
+}
+
+function checkOutOfCanvasBoundsBottom() {
+    var isInsideCanvas = true,
+        stageSize = kineticStage.getSize(),
+        shapeActualSize = getShapeCurrentSizeDependingOnScale(),
+        shapePosition = currentActiveShape.shape.getPosition();
+
+    if (shapePosition.y >= stageSize.height) {
+        isInsideCanvas = false;
+    }
+    return isInsideCanvas;
+}
+
+function getShapeCurrentSizeDependingOnScale() {
+    var shapeSize,
+        shapeScale,
+        shapeActualSize;
+
+    shapeSize = currentActiveShape.shape.getSize();
+    shapeScale = currentActiveShape.shape.getScale();
+    shapeActualSize = {
+        'width': shapeSize.width * shapeScale.x,
+        'height': shapeSize.height * shapeScale.y
     };
-    moveCurrentActiveShape(delta);
+
+    return shapeActualSize;
 }

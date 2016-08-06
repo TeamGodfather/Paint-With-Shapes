@@ -1,3 +1,4 @@
+// TODO:
 function createStar() {
     var star = new Kinetic.Star({
         x: window.innerWidth / 2,
@@ -15,5 +16,6 @@ function createStar() {
         outerRadius: 70,
         stroke: 'black',
         strokeWidth: 4
-});
+    });
+    return star;
 }
