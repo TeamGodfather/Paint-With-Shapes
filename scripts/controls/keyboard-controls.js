@@ -3,7 +3,7 @@ function initializeKeyboardControls() {
         .querySelector('body')
         .addEventListener('keydown', function addKeyboardListener(event) {
             event.preventDefault();
-            
+
             if (!currentActiveShape.shape) {
                 return;
             }
@@ -68,7 +68,11 @@ function changeCurrentShapeOpacity(delta) {
 }
 
 function releaseCurrentShape() {
+    if (currentActiveShape.shape.className === 'Line'){
+      currentActiveShape.shape.setStroke(currentColor);
+    }else{
     currentActiveShape.shape.setStroke('');
+  }
     currentActiveShape.shape.remove();
     currentActiveShape.shape.draggable(false);
     layersManager.current.layer.add(currentActiveShape.shape);
