@@ -1,4 +1,4 @@
-# [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+# [Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
 ## [Slides](https://cdn.rawgit.com/TeamGodfather/Paint-With-Shapes/e0d1dbe/presentation/index.html#/)
 
@@ -15,6 +15,7 @@
   - W / S increase/ decrease size
   - Q / E decrease/ increase opacity
   - Up/ Down/ Left/ Right Arrow move shape
+  - ESC cancel current shape
   - drag shape with the mouse
 
 ## Features to be implemented
@@ -63,6 +64,7 @@
     - W / S increase/ decrease change size
     - Q / E decrease/ increase opacity
     - Up/ Down/ Left/ Right Arrow move shape
+    - ESC cancel current shape
 11. Stickers
     - emote icons menu - done
     - apply image as a shape
