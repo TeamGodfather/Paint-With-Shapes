@@ -55,7 +55,29 @@ function intializeMenuButtonsEvents() {
                 return;
             }
 
-            newShape = createNewShapeBasedOnInputTypeOfShape(typeOfShape);
+            switch (typeOfShape) {
+                case implementedShapes.rectangle:
+                    newShape = createRectangle();
+                    break;
+                case implementedShapes.star:
+                    newShape = createStar();
+                    break;
+                case implementedShapes.hexagon:
+                    newShape = createHexagon();
+                    break;
+                case implementedShapes.line:
+                    newShape = createLine();
+                    break;
+                case implementedShapes.pentagon:
+                    newShape = createPentagon();
+                    break;
+                case implementedShapes.triangle:
+                    newShape = createTriangle();
+                    break;
+                default:
+                    break;
+            }
+
             // mark the active shape with a border
             newShape.setStroke(getActiveOutlineStrokeColor(newShape));
 
@@ -68,33 +90,6 @@ function intializeMenuButtonsEvents() {
             currentActiveShape.tempLayer = tempLayer;
             currentActiveShape.tempLayer.draw();
         });
-}
-
-function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
-    var newShape;
-    switch (typeOfShape) {
-        case implementedShapes.rectangle:
-            newShape = createRectangle();
-            break;
-        case implementedShapes.star:
-            newShape = createStar();
-            break;
-        case implementedShapes.hexagon:
-            newShape = createHexagon();
-            break;
-        case implementedShapes.line:
-            newShape = createLine();
-            break;
-        case implementedShapes.pentagon:
-            newShape = createPentagon();
-            break;
-        case implementedShapes.triangle:
-            newShape = createTriangle();
-            break;
-        default:
-            break;
-    }
-    return newShape;
 }
 
 function getActiveOutlineStrokeColor(shape) {
