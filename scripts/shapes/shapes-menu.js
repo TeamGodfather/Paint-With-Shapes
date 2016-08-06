@@ -1,4 +1,5 @@
 var implementedShapes = {
+    'square': 'square',
     'rectangle': 'rectangle',
     'star': 'star',
     'hexagon': 'hexagon',
@@ -73,6 +74,9 @@ function intializeMenuButtonsEvents() {
 function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
     var newShape;
     switch (typeOfShape) {
+        case implementedShapes.square:
+            newShape = createSquare();
+            break;
         case implementedShapes.rectangle:
             newShape = createRectangle();
             break;

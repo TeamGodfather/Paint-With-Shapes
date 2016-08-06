@@ -2,7 +2,7 @@ function createRectangle() {
     var rect = new Kinetic.Rect({
         x: window.innerWidth / 2,
         y: window.innerHeight / 2,
-        width: 100,
+        width: 200,
         height: 100,
         fill: currentColor,
         draggable: true,
@@ -13,4 +13,3 @@ function createRectangle() {
     });
     return rect;
 }
-///
