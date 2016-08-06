@@ -94,6 +94,11 @@ body div#root section#clear a#new-canvas-btn:hover {
 body div#root section#ui {
   position: fixed;
 }
+body div#root section#shapes-menu {
+  position: fixed;
+  top: 400px;
+
+}
 
 /* This only applies to the UL with the buttons at the bottom of the screen*/
 section#ui ul li {
