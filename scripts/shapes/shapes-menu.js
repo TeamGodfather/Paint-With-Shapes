@@ -1,3 +1,12 @@
+var implementedShapes = {
+    'rectangle': 'rectangle',
+    'star': 'star',
+    'hexagon': 'hexagon',
+    'line': 'line',
+    'pentagon': 'pentagon',
+    'triangle': 'triangle'
+};
+
 function initializeShapesUI() {
     var shapesMenu = $('#shapes-menu').hide(),
         btnGetShape = $('#get-shape')
@@ -26,7 +35,7 @@ function intializeMenuButtonsEvents() {
                 typeOfShape,
                 newShape,
                 tempLayer;
-                
+
             if (clicked.hasClass('shape')) {
 
             } else if (clicked.parents('.shape')) {
@@ -47,11 +56,23 @@ function intializeMenuButtonsEvents() {
             }
 
             switch (typeOfShape) {
-                case 'rectangle':
+                case implementedShapes.rectangle:
                     newShape = createRectangle();
                     break;
-                case 'star':
+                case implementedShapes.star:
                     newShape = createStar();
+                    break;
+                case implementedShapes.hexagon:
+                    newShape = createHexagon();
+                    break;
+                case implementedShapes.line:
+                    newShape = createLine();
+                    break;
+                case implementedShapes.pentagon:
+                    newShape = createPentagon();
+                    break;
+                case implementedShapes.triangle:
+                    newShape = createTriangle();
                     break;
                 default:
                     break;

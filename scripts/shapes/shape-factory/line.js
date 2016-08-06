@@ -13,6 +13,6 @@ function createLine() {
         points: [73, 70, 340, 23, 450, 60, 500, 20],
         stroke: 'red',
         tension: 1
-});
+    });
     return line;
 }
