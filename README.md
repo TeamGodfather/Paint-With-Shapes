@@ -1,6 +1,6 @@
 # [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
-## [Slides](https://cdn.rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html#/)
+## [Slides](https://cdn.rawgit.com/TeamGodfather/Paint-With-Shapes/e0d1dbe/presentation/index.html#/)
 
 ## [list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
 
