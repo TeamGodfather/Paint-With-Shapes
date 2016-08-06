@@ -3,8 +3,7 @@ function initializeKeyboardControls() {
         .querySelector('body')
         .addEventListener('keydown', function addKeyboardListener(event) {
             event.preventDefault();
-            console.log(event.key);
-            console.log(event.keyCode);
+            
             if (!currentActiveShape.shape) {
                 return;
             }
