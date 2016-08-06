@@ -1,5 +1,7 @@
 # [Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
+## [Slides](https://cdn.rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html#/)
+
 ## [list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
 
 [Mona Lisa demo](https://youtu.be/k3h-ivpfPS0?t=9s)
