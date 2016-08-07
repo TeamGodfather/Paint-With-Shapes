@@ -6,15 +6,16 @@ var implementedShapes = {
     'line': 'line',
     'pentagon': 'pentagon',
     'triangle': 'triangle',
-    'ring': 'ring'
+    'ring': 'ring',
+    'circle': 'circle'
 };
 
 function initializeShapesUI() {
     var shapesMenu = $('#shapes-menu').hide(),
         btnGetShape = $('#get-shape')
-        .on('click', function() {
-            shapesMenu.toggle();
-        });
+            .on('click', function () {
+                shapesMenu.toggle();
+            });
     intializeMenuButtonsEvents();
 }
 
@@ -32,7 +33,7 @@ function intializeMenuButtonsEvents() {
         star;
 
     rectangle = $('#shapes-menu #shapes')
-        .on('click', function(event) {
+        .on('click', function (event) {
             var clicked = $(event.target),
                 typeOfShape,
                 newShape,
@@ -98,6 +99,9 @@ function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
             break;
         case implementedShapes.ring:
             newShape = createRing();
+            break;
+        case implementedShapes.circle:
+            newShape = createCircle();
             break;
         default:
             break;
