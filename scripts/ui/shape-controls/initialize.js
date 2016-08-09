@@ -47,91 +47,117 @@ function buildShapeControlsElements() {
         .attr('href', '#')
         .attr('id', 'btn-up')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('U');
 
     shapeControls.btnDown = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('D');
 
     shapeControls.btnLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-left')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('L');
 
     shapeControls.btnRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-right')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('R');
 
     shapeControls.btnUpLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-up-left')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('UL');
 
     shapeControls.btnUpRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-up-right')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+      
         .html('UR');
 
     shapeControls.btnDownLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down-left')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+        
         .html('DL');
 
     shapeControls.btnDownRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down-right')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+      
         .html('DR');
 
     shapeControls.btnRotateClockwise = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-rotate-clockwise')
         .addClass('btn-shape-control')
-        .html('RR');
+        .css('text-decoration', 'none')
+        
+        .html('Right');
 
     shapeControls.btnRotateCounterClockwise = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-rotate-counter-clockwise')
         .addClass('btn-shape-control')
-        .html('RL');
+        .css('text-decoration', 'none')
+
+        .html('Left');
 
     shapeControls.btnScaleIncrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-scale-increase')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
+
         .html('+');
 
     shapeControls.btnScaleDecrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-scale-decrease')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
         .html('-');
 
     shapeControls.btnOpacityIncrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-opacity-increase')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
         .html('+');
 
     shapeControls.btnOpacityDecrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-opacity-decrease')
         .addClass('btn-shape-control')
+        .css('text-decoration', 'none')
         .html('-');
 
     shapeControls.btnCommit = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-commit')
         .addClass('btn-shape-control')
-        .html('commit to layer');
+        .html('commit to layer')
+        .css('text-decoration', 'none');
 
     shapeControls.sectionMovement
         .append(shapeControls.btnUpLeft)

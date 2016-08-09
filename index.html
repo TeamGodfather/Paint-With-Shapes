@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles/shapes-menu.css">
 
+    <link rel="stylesheet" type="text/css" href="styles/form-background.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
@@ -49,6 +51,7 @@
     <script src="scripts/ui/get-emoticons.js"></script>
     <script src="scripts/ui/save-button.js"></script>
     <script src="scripts/ui/undo-button.js"></script>
+    <script src="scripts/ui/set-Background.js"></script>
 
     <script src="scripts/ui/shape-controls/initialize.js"></script>
 
@@ -64,13 +67,15 @@
 
         <section id="layer-manager">
             <h2>Layers</h2>
-            <a href="#" class="button" id="create-layer">+</a>
+            <section>
+                <a href="#" class="button" id="create-layer">+</a>
+            </section>
 
-            <ul id="layer-list">
+            <ul id="layer-list"></ul>
 
-            </ul>
             <a href="#" class="button" id="flatten-layers">Flatten</a>
         </section>
+        <!--Menu-->
 
         <section id="clear">
             <a href="#" class="button" id="new-canvas-btn">NEW</a>
@@ -122,7 +127,16 @@
                     </div>
                 </li>
                 <li>
+                    <a href="#" class="button, button-style" id="set-background">Set background</a>
+                    <div class="form-Background" id="myBackground">
+                        Enter url here:<br>
+                        <input type="text" name="url" id="tb-backround-url" placeholder="Enter URL">
+                        <input type="submit" value="Save" class="input-url" id="set">
+                        <input type="submit" value="Cancle" class="input-url" id="cancle">
+                </li>
+                <li>
                     <a href="#" class="button, button-style" id="save">Save</a>
+                    </div>
                 </li>
             </ul>
         </section>

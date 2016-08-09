@@ -6,43 +6,44 @@
 body div#root section#canvas-container {
   border: 1px solid rgba(0,0,0,0);
 }
+/**/
 body div#root section#layer-manager {
   position: fixed;
   width: 80px;
   height: 300px;
   top: 30px;
-  left: 30px;
+  left: 20px;
   padding: 10px;
-  border: 1px solid #000;
-  border-radius: 10px;
+  border: 1px solid grey;
+  border-radius: 7px;
   text-align: center;
-    color: white;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9acd32+0,aecc6e+100 */
-    background: rgb(154,205,50); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(154,205,50,1) 0%, rgba(174,204,110,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(154,205,50,1) 0%,rgba(174,204,110,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(154,205,50,1) 0%,rgba(174,204,110,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9acd32', endColorstr='#aecc6e',GradientType=0 ); /* IE6-9 */
-    box-shadow: 2px 2px grey;
+  box-shadow: 5px 5px 5px lightgrey;
+  background-color: #F0F4F9;
 }
 body div#root section#layer-manager h2 {
   font-size: 16px;
   font-weight: normal;
+  padding-bottom: 3px;
+  color: gray;
 }
 body div#root section#layer-manager a {
   text-decoration: none;
 }
-body div#root section#layer-manager a:hover {
-  text-decoration: underline;
+body div#root section#layer-manager a#create-layer:hover {
+  background-color: #00AFF0;
 }
-body div#root section#layer-manager a#create-layer {
-  font-size: 22px;
-  color: #fff;
-
+body div#root section#layer-manager section a#create-layer {
+  font-size: 20px;
+  margin: auto;
+  padding: 0px 20px;
+  padding-bottom: 2px;
+  color: white;
+  background-color: #1B95E0;
+  border-radius: 15px;  
 }
 body div#root section#layer-manager a#flatten-layers {
   margin-bottom: 5px;
-  color: #fff;
+  color: grey;
 }
 body div#root section#layer-manager ul {
   list-style: none;
@@ -70,27 +71,31 @@ body div#root section#layer-manager ul li a.list-item-id {
   color: #000;
 }
 body div#root section#layer-manager ul li.selected {
-  background-color: #ffc966;
+  background-color: #FCD116;
 }
 body div#root section#layer-manager ul li.selected:hover {
-  background-color: #ffdb99;
+  background-color: #F7DD8F;
 }
 body div#root section#clear {
   position: fixed;
 }
+
+/*Buton new*/
+
 body div#root section#clear a#new-canvas-btn {
-    float: right;
-    padding: 15px 10px;
-    margin: -20px 20px 20px -20px;
+  padding: 15px 10px;
   text-decoration: none;
-  background-color: #9acd32;
+  background-color: #55CAF5;
   color: #fff;
   border-radius: 100%;
   font-size: 18px;
 }
 body div#root section#clear a#new-canvas-btn:hover {
-  background-color: #aed75b;
+  background-color: #90DAF4;
 }
+
+/**/
+
 body div#root section#ui {
   position: fixed;
 }
@@ -139,3 +144,4 @@ section#ui ul li {
     text-decoration: none;
     cursor: pointer;
 }
+

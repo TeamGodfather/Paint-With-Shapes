@@ -1,0 +1,27 @@
+.form-Background{
+    display: none;
+        position: absolute;
+        padding: 20px 20px;
+    margin-top: -250px;
+    margin-left: 100px;
+    background-color: #fff;
+    max-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 200px;
+    text-align: center;
+}
+
+input.input-url{
+    margin: 10px;
+    width: 60px;
+    padding: 5px ;
+}
+
+input.input-url:hover {
+      cursor: pointer;
+}
+
+.showMe{
+    display: inline-block;
+}
+

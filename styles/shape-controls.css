@@ -1,9 +1,42 @@
 #shape-controls {
   position: absolute;
   display: block;
-  width: 195px;
+  width: 250px;
   height: 120px;
-  top: 50px;
-  left: 50px;
-  padding: 5px;
+  top: 15px;
+  left: 15px;
+  padding: 10px;
+}
+
+div#section-movement a:hover{
+background-color: lightgray;
+border-radius: 10px;
+margin: 3px;
+padding: 3px;
+}
+
+div#section-movement a{
+  margin: 2px;
+}
+
+#btn-rotate-clockwise, 
+#btn-rotate-counter-clockwise,
+#btn-scale-increase,
+#btn-scale-decrease,
+#btn-opacity-increase,
+#btn-opacity-decrease,
+#btn-opacity-increase{
+  background-color: #FCD116;
+  border-radius: 15px;
+  padding:5px 20px;
+  margin-left: 10px;
+}
+#btn-rotate-clockwise:hover, 
+#btn-rotate-counter-clockwise:hover,
+#btn-scale-increase:hover,
+#btn-scale-decrease:hover,
+#btn-opacity-increase:hover,
+#btn-opacity-decrease:hover,
+#btn-opacity-increase:hover{
+  background-color: #F7DD8F;
 }
