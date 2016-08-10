@@ -20,7 +20,7 @@ function initializeLayerUI() {
     });
 
     btnFlattenLayers.addEventListener('click', function (event) {
-        fallterLayersToBottomLayer();
+        flattenLayersToBottomLayer();
         setActiveLayer(0);
         updateLayerListSelectedItem(layersManager.current);
     });
