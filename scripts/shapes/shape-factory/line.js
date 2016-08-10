@@ -7,8 +7,8 @@ function createLine() {
         fill: currentColor,
         draggable: true,
         offset: {
-            x: 50,
-            y: 50
+            x: 240,
+            y: 30
         },
         points: [73, 70, 340, 23, 450, 60, 500, 20],
         stroke: 'red',

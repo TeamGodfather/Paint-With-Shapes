@@ -7,7 +7,7 @@ function createRectangle() {
         fill: currentColor,
         draggable: true,
         offset: {
-            x: 50,
+            x: 100,
             y: 50
         }
     });

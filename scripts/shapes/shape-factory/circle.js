@@ -6,8 +6,8 @@ function createCircle() {
         fill: currentColor,
         draggable: true,
         offset: {
-            x: 50,
-            y: 50
+            x: 0,
+            y: 0
           }
     });
     return circle;
