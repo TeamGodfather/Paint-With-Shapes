@@ -2,7 +2,7 @@ section#shapes-menu {
   position: fixed;
   display: none;
   left: 20px;
-  top: 500px;
+    top: 400px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    width: 200px;
 }
