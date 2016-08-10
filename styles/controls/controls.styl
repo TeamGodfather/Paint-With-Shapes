@@ -6,7 +6,10 @@ btn-down-img = url('../../images/arrows/down.png')
 btn-down-left-img = url('../../images/arrows/down-left.png')
 btn-left-img = url('../../images/arrows/left.png')
 btn-up-left-img = url('../../images/arrows/up-left.png')
-
+btn-plus-img = url ('../../images/arrows/plus.png')
+btn-minus-img = url ('../../images/arrows/minus.png')
+btn-rotate-left-img = url ('../../images/arrows/rotate-left.png')
+btn-rotate-right-img = url ('../../images/arrows/rotate-right.png')
 
 btn-style()
     display: inline-block
@@ -21,12 +24,54 @@ section#controls-menu
         
         section#shape-controls
             padding 20px
-            
+            text-align: center
+
             div#section-movement
                 position relative
+                text-align: center
+                height: 150px
+                width 210px
 
                 a
                     btn-style()
+                    text-decoration: none
 
                 a#btn-up
                     background-image btn-up-img
+                    top 0px
+                    left 80px
+
+                a#btn-up-right
+                    background-image btn-up-right-img
+                    top 0
+                    left 115px
+                
+                a#btn-right
+                    background-image btn-right-img
+                    top 35px
+                    left 115px
+
+                a#btn-down-right
+                    background-image btn-down-right-img
+                    top 70px
+                    left 115px
+                    
+                a#btn-down
+                    background-image btn-down-img
+                    top 70px
+                    left 80px
+
+                a#btn-down-left
+                    background-image btn-down-left-img
+                    left 45px
+                    top 70px
+
+                a#btn-left
+                    background-image btn-left-img
+                    left 45px
+                    top 35px
+
+                a#btn-up-left
+                    background-image btn-up-left-img
+                    top 0
+                    left 45px

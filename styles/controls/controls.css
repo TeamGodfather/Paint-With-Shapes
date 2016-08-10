@@ -1,8 +1,12 @@
 section#controls-menu div#button-controls section#shape-controls {
   padding: 20px;
+  text-align: center;
 }
 section#controls-menu div#button-controls section#shape-controls div#section-movement {
   position: relative;
+  text-align: center;
+  height: 150px;
+  width: 210px;
 }
 section#controls-menu div#button-controls section#shape-controls div#section-movement a {
   display: inline-block;
@@ -10,7 +14,45 @@ section#controls-menu div#button-controls section#shape-controls div#section-mov
   height: 30px;
   position: absolute;
   background-size: 30px 30px;
+  text-decoration: none;
 }
 section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up {
   background-image: url("../../images/arrows/up.png");
+  top: 0px;
+  left: 80px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up-right {
+  background-image: url("../../images/arrows/up-right.png");
+  top: 0;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-right {
+  background-image: url("../../images/arrows/right.png");
+  top: 35px;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down-right {
+  background-image: url("../../images/arrows/down-right.png");
+  top: 70px;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down {
+  background-image: url("../../images/arrows/down.png");
+  top: 70px;
+  left: 80px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down-left {
+  background-image: url("../../images/arrows/down-left.png");
+  left: 45px;
+  top: 70px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-left {
+  background-image: url("../../images/arrows/left.png");
+  left: 45px;
+  top: 35px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up-left {
+  background-image: url("../../images/arrows/up-left.png");
+  top: 0;
+  left: 45px;
 }
