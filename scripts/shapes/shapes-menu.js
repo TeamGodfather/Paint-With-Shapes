@@ -54,8 +54,8 @@ function intializeMenuButtonsEvents() {
             }
 
             if (layersManager.current === null) {
-                // Do not create a shape without a layer
-                return;
+                // Create a new layer.
+                createNewKineticLayer();
             }
 
             newShape = createNewShapeBasedOnInputTypeOfShape(typeOfShape);
