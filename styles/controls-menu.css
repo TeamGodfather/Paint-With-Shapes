@@ -1,0 +1,12 @@
+section#controls-menu {
+  position: fixed;
+  top: 400px;
+  left: -60px;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+section#controls-menu header a {
+  text-decoration: none;
+  background-color: #e6e6e6;
+  padding: 5px 10px;
+}
