@@ -1,10 +1,13 @@
 var implementedShapes = {
+    'square': 'square',
     'rectangle': 'rectangle',
     'star': 'star',
     'hexagon': 'hexagon',
     'line': 'line',
     'pentagon': 'pentagon',
-    'triangle': 'triangle'
+    'triangle': 'triangle',
+    'ring': 'ring',
+    'circle': 'circle'
 };
 
 function initializeShapesUI() {
@@ -46,38 +49,15 @@ function intializeMenuButtonsEvents() {
             typeOfShape = $(clicked).attr('id');
 
             if (currentActiveShape.shape) {
-                // Do nothing if there's an active shape'
-                return;
+               cancelCurrentActiveShape();
             }
 
             if (layersManager.current === null) {
-                // Do not create a shape without a layer
-                return;
+                // Create a new layer.
+                createNewKineticLayer();
             }
 
-            switch (typeOfShape) {
-                case implementedShapes.rectangle:
-                    newShape = createRectangle();
-                    break;
-                case implementedShapes.star:
-                    newShape = createStar();
-                    break;
-                case implementedShapes.hexagon:
-                    newShape = createHexagon();
-                    break;
-                case implementedShapes.line:
-                    newShape = createLine();
-                    break;
-                case implementedShapes.pentagon:
-                    newShape = createPentagon();
-                    break;
-                case implementedShapes.triangle:
-                    newShape = createTriangle();
-                    break;
-                default:
-                    break;
-            }
-
+            newShape = createNewShapeBasedOnInputTypeOfShape(typeOfShape);
             // mark the active shape with a border
             newShape.setStroke(getActiveOutlineStrokeColor(newShape));
 
@@ -90,6 +70,42 @@ function intializeMenuButtonsEvents() {
             currentActiveShape.tempLayer = tempLayer;
             currentActiveShape.tempLayer.draw();
         });
+}
+
+function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
+    var newShape;
+    switch (typeOfShape) {
+        case implementedShapes.square:
+            newShape = createSquare();
+            break;
+        case implementedShapes.rectangle:
+            newShape = createRectangle();
+            break;
+        case implementedShapes.star:
+            newShape = createStar();
+            break;
+        case implementedShapes.hexagon:
+            newShape = createHexagon();
+            break;
+        case implementedShapes.line:
+            newShape = createLine();
+            break;
+        case implementedShapes.pentagon:
+            newShape = createPentagon();
+            break;
+        case implementedShapes.triangle:
+            newShape = createTriangle();
+            break;
+        case implementedShapes.ring:
+            newShape = createRing();
+            break;
+        case implementedShapes.circle:
+            newShape = createCircle();
+            break;
+        default:
+            break;
+    }
+    return newShape;
 }
 
 function getActiveOutlineStrokeColor(shape) {

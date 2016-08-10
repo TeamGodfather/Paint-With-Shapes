@@ -68,7 +68,15 @@ function updateLayerUiContainerPosition() {
     if (+currentTop + 160 > currentWindowHeight) {
         layerUiContainer.style.top = (currentWindowHeight - 20 - 160) + 'px';
     }
-    
+}
+
+function createNewKineticLayer() {
+    var newLayer = createNewLayer();
+    layersManager.allLayers.push(newLayer);
+    layersManager.current = newLayer;
+    kineticStage.add(layersManager.current.layer);
+    setActiveLayer(newLayer.id);
+    updateLayerListSelectedItem(newLayer);
 }
 
 
