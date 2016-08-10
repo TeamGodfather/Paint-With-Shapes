@@ -49,8 +49,7 @@ function intializeMenuButtonsEvents() {
             typeOfShape = $(clicked).attr('id');
 
             if (currentActiveShape.shape) {
-                // Do nothing if there's an active shape'
-                return;
+               cancelCurrentActiveShape();
             }
 
             if (layersManager.current === null) {
