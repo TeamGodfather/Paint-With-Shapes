@@ -31,6 +31,7 @@ $(function () {
     var $cancle = $("#cancle");
 
     $cancle.on("click", function () {
+        $backgroundVal.val("");
         if ($myBackground.hasClass("showMe")) {
             $myBackground.removeClass("showMe");
         }

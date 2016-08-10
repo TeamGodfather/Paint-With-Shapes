@@ -103,6 +103,10 @@ function updateLayerListSelectedItem(currentLayer) {
     var layerListItems = $('#layer-list').children(),
         i;
 
+    if (layerListItems.length === 0) {
+        return;
+    }
+
     var currentId = +currentLayer.id;
     for (i = 0; i < layerListItems.length; i += 1) {
         var id = $(layerListItems[i]).children('.list-item-id').html();
