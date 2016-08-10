@@ -1,4 +1,5 @@
 section#shapes-menu {
+  background-color: white;
   position: fixed;
   display: none;
   left: 20px;
@@ -24,3 +25,6 @@ section#shapes-menu ul li a:hover{
 border-radius: 10px;
 }
 
+section#shapes-menu ul li input#url-img{
+  margin-left: 20px;
+}

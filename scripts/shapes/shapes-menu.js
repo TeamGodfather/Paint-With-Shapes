@@ -7,7 +7,8 @@ var implementedShapes = {
     'pentagon': 'pentagon',
     'triangle': 'triangle',
     'ring': 'ring',
-    'circle': 'circle'
+    'circle': 'circle',
+    'img': 'img'
 };
 
 function initializeShapesUI() {
@@ -101,6 +102,9 @@ function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
             break;
         case implementedShapes.circle:
             newShape = createCircle();
+            break;
+               case implementedShapes.img:
+            newShape= createImg();
             break;
         default:
             break;
