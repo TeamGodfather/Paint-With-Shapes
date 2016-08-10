@@ -1,0 +1,32 @@
+btn-up-img = url('../../images/arrows/up.png')
+btn-up-right-img = url('../../images/arrows/up-right.png')
+btn-right-img = url('../../images/arrows/right.png')
+btn-down-right-img = url('../../images/arrows/down-right.png')
+btn-down-img = url('../../images/arrows/down.png')
+btn-down-left-img = url('../../images/arrows/down-left.png')
+btn-left-img = url('../../images/arrows/left.png')
+btn-up-left-img = url('../../images/arrows/up-left.png')
+
+
+btn-style()
+    display: inline-block
+    width 30px
+    height 30px
+    position absolute
+    background-size 30px 30px
+
+section#controls-menu
+
+    div#button-controls
+        
+        section#shape-controls
+            padding 20px
+            
+            div#section-movement
+                position relative
+
+                a
+                    btn-style()
+
+                a#btn-up
+                    background-image btn-up-img

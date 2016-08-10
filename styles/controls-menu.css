@@ -11,13 +11,13 @@ section#controls-menu header a {
   padding: 5px 10px;
 }
 section#controls-menu div#button-controls {
-  width: 160px;
+  width: 240px;
   height: 540px;
   border: 1px solid #000;
-  background-color: #e6e6e6;
+  background-color: rgba(222,222,222,0.5);
   position: fixed;
   top: 100px;
-  left: -165px;
+  left: -240px;
 }
 section#controls-menu div#button-controls.hidden {
   display: none;

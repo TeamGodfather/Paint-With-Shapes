@@ -13,14 +13,14 @@ function initializeOpenShapeControlsButton() {
             controls
                 .removeClass('visible')
                 .animate({
-                    left: '-165px'
+                    left: '-245px'
                 });
             btn.html('show controls');
 
         } else {
 
             btncontainer.animate({
-                left: '100px'
+                left: '175px'
             });
             controls
                 .addClass('visible')
@@ -28,7 +28,6 @@ function initializeOpenShapeControlsButton() {
                     left: '-10px'
                 });;
             btn.html('hide controls');
-
         }
     });
 }

@@ -1,0 +1,16 @@
+section#controls-menu div#button-controls section#shape-controls {
+  padding: 20px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement {
+  position: relative;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 30px 30px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up {
+  background-image: url("../../images/arrows/up.png");
+}
