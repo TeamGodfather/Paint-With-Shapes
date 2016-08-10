@@ -191,7 +191,7 @@ function buildShapeControlsElements() {
         .append($('<p />').html('opacity'))
         .append(shapeControls.sectionOpacity)
         .append(shapeControls.btnCommit)
-        .appendTo('body')
+        .appendTo('#button-controls')
         .accordion({
             collapsible: true
         });

@@ -1,4 +1,4 @@
-section#controls-menu {
+section#controls-menu header {
   position: fixed;
   top: 400px;
   left: -60px;
@@ -9,4 +9,16 @@ section#controls-menu header a {
   text-decoration: none;
   background-color: #e6e6e6;
   padding: 5px 10px;
+}
+section#controls-menu div#button-controls {
+  width: 160px;
+  height: 540px;
+  border: 1px solid #000;
+  background-color: #e6e6e6;
+  position: fixed;
+  top: 100px;
+  left: -165px;
+}
+section#controls-menu div#button-controls.hidden {
+  display: none;
 }
