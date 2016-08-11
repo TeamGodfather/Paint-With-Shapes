@@ -44,7 +44,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/layer-manager.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:false } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Layer Manager Features
 
@@ -54,7 +54,7 @@
 	- Insert background layer from url
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Shapes Screenshot
 
@@ -63,7 +63,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:false } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Shapes Features
 
