@@ -44,7 +44,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/layer-manager.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.5em', hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Layer Manager Features
 
@@ -60,6 +60,11 @@
 - **Remove** any layer
   - Remove from Kinetic.Stage()
   - Remove from LayersManager
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# More Layer Manager Features
 
 - **Select** current layer
   - Shapes are added to the currently active layer
@@ -79,7 +84,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: {  showInPresentation:true, style:'font-size: 0.5em', hasScriptWrapper:true } -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Shapes Features
 
@@ -92,6 +97,12 @@
   - Arrow keys
   - Drag with mouse
   - Arrow UI buttons
+
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# More Shapes Features
 
 - **Rotate**
   - A/ D keys
