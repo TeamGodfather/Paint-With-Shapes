@@ -39,9 +39,9 @@
 
 # Paint With Shapes
 
-<!-- ![](./imgs/githubgraphics.png) -->
+<!-- ![](./imgs/withblackbg.png) -->
 
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/withblackbg.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
