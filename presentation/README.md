@@ -48,13 +48,16 @@
 
 # Layer Manager Features
 
-	- Add new layer on top
-	- Remove any layer
-	- Flatten all layers - save as a single image
-	- Insert background layer from url
+- Add new layer on top
+
+- Remove any layer
+
+- Flatten all layers - save as a single image
+
+- Insert background layer from url
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 
 # Shapes Screenshot
 
