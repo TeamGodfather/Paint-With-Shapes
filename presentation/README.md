@@ -37,6 +37,38 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
+# General Project Info
+
+- What's it all about ? 
+
+- Project is split into a lot of different files to avoid commit conflicts
+
+- Documentation .mds
+  - Features
+  - Shapes list todo
+  - List of implemented functions by files 
+  - Utilizing GitHub's Issues
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Used JS libraries
+
+- Kinetic.js 
+  - layer management
+  - shapes management 
+
+- JQuery 
+  - DOM manipulations 
+  - .animate()
+
+- JQuery UI
+  - .draggable()
+  - .resizeable() 
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
 # Layer Manager Screenshot
 
 <!-- ![](./imgs/layer-manager.png) -->
@@ -71,8 +103,13 @@
   - Layers above the selected layer are invisible
 
 - **Flatten** all layers - save as a single image
+  - Move all existing shapes to bottom layer
+  - Remove all existing layers ( except for the bottom one )
 
 - **Insert** background layer from url
+  - Loads an image from input url
+  - Inserts it on a new layer
+  - Inserts the new layer as a bottom layer
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
@@ -90,14 +127,15 @@
 
 - **Create**
   - Factory returns the correct shape
-  - Assigns current color
-  - Shape exist in a temporary layer until it is committed to an existing layer
+  - Each shape has a separate creation function
+  - Assigns the currently selected fill color
+  - Assigns a stroke color to differentiate the active shape from the already existing shapes
+  - New shape exist in a temporary layer until it is committed to an existing layer
   
 - **Move**
-  - Arrow keys
-  - Drag with mouse
-  - Arrow UI buttons
-
+  - Arrow keys - 4 directions/ 5px step
+  - Arrow UI buttons - 8 directions/ 5px step  
+  - Drag with mouse - free form
 
 <!-- section start -->
 <!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
