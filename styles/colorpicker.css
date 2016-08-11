@@ -1,0 +1,18 @@
+div.kineticjs-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+div#colorpicker {
+  position: fixed;
+  top: 10px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  z-index: 10000;
+}
+div#colorpicker canvas {
+  position: fixed;
+  top: 10px;
+  left: 50px;
+}
