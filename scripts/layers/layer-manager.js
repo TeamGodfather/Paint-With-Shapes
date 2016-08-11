@@ -68,7 +68,7 @@ function removeLayer(layerListItem) {
     parent.parentNode.removeChild(parent);
 }
 
-function fallterLayersToBottomLayer() {
+function flattenLayersToBottomLayer() {
     var numberOfShapes,
         numberOfLayers,
         layerNr,
@@ -103,6 +103,10 @@ function updateLayerListSelectedItem(currentLayer) {
     var layerListItems = $('#layer-list').children(),
         i;
 
+    if (layerListItems.length === 0) {
+        return;
+    }
+
     var currentId = +currentLayer.id;
     for (i = 0; i < layerListItems.length; i += 1) {
         var id = $(layerListItems[i]).children('.list-item-id').html();
@@ -123,7 +127,7 @@ function setActiveLayer(id) {
     length = layersManager.allLayers.length;
     for (index = 0; index < length; index += 1) {
         if (found) {
-            layersManager.allLayers[index].layer.setOpacity(0.15);
+            layersManager.allLayers[index].layer.setOpacity(0);
         } else {
             layersManager.allLayers[index].layer.setOpacity(1);
         }

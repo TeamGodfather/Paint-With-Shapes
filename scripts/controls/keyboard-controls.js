@@ -2,7 +2,7 @@ function initializeKeyboardControls() {
     var canvasContainer = document
         .querySelector('body')
         .addEventListener('keydown', function addKeyboardListener(event) {
-            event.preventDefault();
+            // event.preventDefault();
 
             if (!currentActiveShape.shape) {
                 return;

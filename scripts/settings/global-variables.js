@@ -16,6 +16,8 @@ var kineticStage,
         'tempLayer': null
     },
 
-    currentColor = '#cc00cc';
+    currentColor = '#cc00cc',
+    
+    backgroundImageURL;
 
 

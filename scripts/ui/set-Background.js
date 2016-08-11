@@ -18,16 +18,22 @@ $(function () {
 
     $save.on("click", function () {
         var text = $backgroundVal.val();
+        backgroundImageURL = text;
+        loadBackgroundImage(backgroundImageURL);
         $backgroundVal.val("");
+
+        if ($myBackground.hasClass("showMe")) {
+            $myBackground.removeClass("showMe");
+        }
     });
 
     //Cancle button
     var $cancle = $("#cancle");
 
     $cancle.on("click", function () {
+        $backgroundVal.val("");
         if ($myBackground.hasClass("showMe")) {
             $myBackground.removeClass("showMe");
         }
     });
-
 });

@@ -3,6 +3,7 @@ $(function () {
     canvasOptions.height = $(document).innerHeight() - 10;
     kineticStage = intializeCanvas(canvasOptions);
 
+    initializeOpenShapeControlsButton();
     initializeShapeControls();
     initializeLayerUI();
     initializeShapesUI();

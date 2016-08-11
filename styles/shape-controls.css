@@ -1,4 +1,4 @@
-#shape-controls {
+/*#shape-controls {
   position: absolute;
   display: block;
   width: 250px;
@@ -39,4 +39,4 @@ div#section-movement a{
 #btn-opacity-decrease:hover,
 #btn-opacity-increase:hover{
   background-color: #F7DD8F;
-}
+}*/

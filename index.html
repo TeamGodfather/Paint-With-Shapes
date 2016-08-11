@@ -17,45 +17,9 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/controls-menu.css">
 
-    <script src="scripts/app.js"></script>
-    <script src="scripts/settings/global-variables.js"></script>
-
-    <script src="scripts/layers/layer-manager.js"></script>
-    <script src="scripts/layers/layer-ui.js"></script>
-
-    <script src="scripts/shapes/shapes-menu.js"></script>
-    <script src="scripts/shapes/shape-factory/square.js"></script>
-    <script src="scripts/shapes/shape-factory/rectangle.js"></script>
-    <script src="scripts/shapes/shape-factory/line.js"></script>
-    <script src="scripts/shapes/shape-factory/star.js"></script>
-    <script src="scripts/shapes/shape-factory/hexagon.js"></script>
-    <script src="scripts/shapes/shape-factory/pentagon.js"></script>
-    <script src="scripts/shapes/shape-factory/triangle.js"></script>
-    <script src="scripts/shapes/shape-factory/ring.js"></script>
-    <script src="scripts/shapes/shape-factory/circle.js"></script>
-
-    <script src="scripts/controls/keyboard-controls.js"></script>
-    <script src="scripts/controls/mouse-controls.js"></script>
-
-    <script src="scripts/colorpicker/get-color.js"></script>
-
-    <script src="scripts/ui/clear-canvas.js"></script>
-    <script src="scripts/ui/ui-position.js"></script>
-    <script src="scripts/ui/draggable-menus.js"></script>
-    <script src="scripts/ui/get-emoticons.js"></script>
-    <script src="scripts/ui/save-button.js"></script>
-    <script src="scripts/ui/undo-button.js"></script>
-    <script src="scripts/ui/set-Background.js"></script>
-
-    <script src="scripts/ui/shape-controls/initialize.js"></script>
-
-    <script src="scripts/utils/id-provider.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/controls/controls.css">    
 </head>
 
 <body>
@@ -128,17 +92,21 @@
                 </li>
                 <li>
                     <a href="#" class="button, button-style" id="set-background">Set background</a>
-                    <div class="form-Background" id="myBackground">
-                        Enter url here:<br>
-                        <input type="text" name="url" id="tb-backround-url" placeholder="Enter URL">
-                        <input type="submit" value="Save" class="input-url" id="set">
-                        <input type="submit" value="Cancle" class="input-url" id="cancle">
+
                 </li>
                 <li>
                     <a href="#" class="button, button-style" id="save">Save</a>
-                    </div>
                 </li>
             </ul>
+        </section>
+
+        <section>
+            <div class="form-Background" id="myBackground">
+                <label for="tb-backround-url">Enter url here:</label> <br>
+                <input type="text" name="url" id="tb-backround-url" placeholder="Enter URL">
+                <input type="submit" value="Save" class="input-url" id="set">
+                <input type="submit" value="Cancel" class="input-url" id="cancle">
+            </div>
         </section>
 
         <section id="shapes-menu">
@@ -170,9 +138,69 @@
                 <li class="shape" id="circle">
                     <a href="#">circle</a>
                 </li>
+                 <li class="shape" id="img">
+                    <a href="#" id="get-img">img</a>
+                    <input type="text" id="url-img" placeholder="Paste img URL here:">
+                </li>
             </ul>
         </section>
+
+        <section id="controls-menu">
+            <header id="btn-container">
+                <a href="#" id="controls-menu-toggle">show controls</a>
+            </header>
+
+            <div id="button-controls">
+
+            </div>
+
+        </section>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/settings/global-variables.js"></script>
+
+    <script src="scripts/layers/layer-manager.js"></script>
+    <script src="scripts/layers/layer-ui.js"></script>
+
+    <script src="scripts/shapes/shapes-menu.js"></script>
+    <script src="scripts/shapes/shape-factory/square.js"></script>
+    <script src="scripts/shapes/shape-factory/rectangle.js"></script>
+    <script src="scripts/shapes/shape-factory/line.js"></script>
+    <script src="scripts/shapes/shape-factory/star.js"></script>
+    <script src="scripts/shapes/shape-factory/hexagon.js"></script>
+    <script src="scripts/shapes/shape-factory/pentagon.js"></script>
+    <script src="scripts/shapes/shape-factory/triangle.js"></script>
+    <script src="scripts/shapes/shape-factory/ring.js"></script>
+    <script src="scripts/shapes/shape-factory/circle.js"></script>
+    <script src="scripts/shapes/shape-factory/img.js"></script>
+
+
+    <script src="scripts/controls/keyboard-controls.js"></script>
+    <script src="scripts/controls/mouse-controls.js"></script>
+
+    <script src="scripts/colorpicker/get-color.js"></script>
+
+    <script src="scripts/ui/clear-canvas.js"></script>
+    <script src="scripts/ui/ui-position.js"></script>
+    <script src="scripts/ui/draggable-menus.js"></script>
+    <script src="scripts/ui/get-emoticons.js"></script>
+    <script src="scripts/ui/save-button.js"></script>
+    <script src="scripts/ui/undo-button.js"></script>
+    <script src="scripts/ui/set-Background.js"></script>
+    <script src="scripts/ui/load-bg-image.js"></script>
+
+    <script src="scripts/ui/shape-controls/initialize.js"></script>
+    <script src="scripts/ui/shape-controls/btn-open.js"></script>
+
+    <script src="scripts/utils/id-provider.js"></script>
 </body>
 
 </html>

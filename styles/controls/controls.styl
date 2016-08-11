@@ -1,0 +1,145 @@
+btn-up-img = url('../../images/arrows/up.png')
+btn-up-right-img = url('../../images/arrows/up-right.png')
+btn-right-img = url('../../images/arrows/right.png')
+btn-down-right-img = url('../../images/arrows/down-right.png')
+btn-down-img = url('../../images/arrows/down.png')
+btn-down-left-img = url('../../images/arrows/down-left.png')
+btn-left-img = url('../../images/arrows/left.png')
+btn-up-left-img = url('../../images/arrows/up-left.png')
+btn-plus-img = url('../../images/arrows/plus.png')
+btn-minus-img = url('../../images/arrows/minus.png')
+btn-rotate-left-img = url('../../images/arrows/rotateleft.png')
+btn-rotate-right-img = url('../../images/arrows/rotateright.png')
+
+btn-style()
+    display: inline-block
+    width 30px
+    height 30px
+    position absolute
+    background-size 30px 30px
+
+section#controls-menu
+
+    header#btn-container
+
+        a#controls-menu-toggle
+            text-decoration: none
+
+    div#button-controls
+        
+        section#shape-controls
+            padding 20px
+            text-align: center
+
+            div#section-movement
+                position relative
+                text-align: center
+                height: 100px
+                width 210px
+
+                a
+                    btn-style()
+                    text-decoration: none
+
+                a#btn-up
+                    background-image btn-up-img
+                    top 0px
+                    left 80px
+
+                a#btn-up-right
+                    background-image btn-up-right-img
+                    top 0
+                    left 115px
+                
+                a#btn-right
+                    background-image btn-right-img
+                    top 35px
+                    left 115px
+
+                a#btn-down-right
+                    background-image btn-down-right-img
+                    top 70px
+                    left 115px
+                    
+                a#btn-down
+                    background-image btn-down-img
+                    top 70px
+                    left 80px
+
+                a#btn-down-left
+                    background-image btn-down-left-img
+                    left 45px
+                    top 70px
+
+                a#btn-left
+                    background-image btn-left-img
+                    left 45px
+                    top 35px
+
+                a#btn-up-left
+                    background-image btn-up-left-img
+                    top 0
+                    left 45px
+        
+            div#section-rotate
+                position relative
+                text-align: center
+                height: 40px
+                width 210px
+
+                a
+                    btn-style()
+                    text-decoration: none
+
+                a#btn-rotate-clockwise
+                    background-image btn-rotate-right-img
+                    top 0
+                    left 100px
+                    color red
+
+                a#btn-rotate-counter-clockwise
+                    background-image btn-rotate-left-img
+                    top 0
+                    left 60px   
+
+            div#section-scale
+                position relative
+                text-align: center
+                height: 40px
+                width 210px
+
+                a
+                    btn-style()
+                    text-decoration: none
+
+                a#btn-scale-increase
+                    background-image btn-plus-img
+                    top 0
+                    left 100px
+                    color red
+
+                a#btn-scale-decrease
+                    background-image btn-minus-img
+                    top 0
+                    left 60px 
+            
+            div#section-opacity
+                position relative
+                text-align: center
+                height: 40px
+                width 210px
+
+                a
+                    btn-style()
+                    text-decoration: none
+
+                a#btn-opacity-increase
+                    background-image btn-plus-img
+                    top 0
+                    left 100px
+                    color red
+
+                a#btn-opacity-decrease
+                    background-image btn-minus-img
+                    top 0
+                    left 60px 

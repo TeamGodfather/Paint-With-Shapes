@@ -1,0 +1,136 @@
+section#controls-menu header#btn-container a#controls-menu-toggle {
+  text-decoration: none;
+}
+section#controls-menu div#button-controls section#shape-controls {
+  padding: 20px;
+  text-align: center;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement {
+  position: relative;
+  text-align: center;
+  height: 100px;
+  width: 210px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 30px 30px;
+  text-decoration: none;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up {
+  background-image: url("../../images/arrows/up.png");
+  top: 0px;
+  left: 80px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up-right {
+  background-image: url("../../images/arrows/up-right.png");
+  top: 0;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-right {
+  background-image: url("../../images/arrows/right.png");
+  top: 35px;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down-right {
+  background-image: url("../../images/arrows/down-right.png");
+  top: 70px;
+  left: 115px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down {
+  background-image: url("../../images/arrows/down.png");
+  top: 70px;
+  left: 80px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-down-left {
+  background-image: url("../../images/arrows/down-left.png");
+  left: 45px;
+  top: 70px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-left {
+  background-image: url("../../images/arrows/left.png");
+  left: 45px;
+  top: 35px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-movement a#btn-up-left {
+  background-image: url("../../images/arrows/up-left.png");
+  top: 0;
+  left: 45px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-rotate {
+  position: relative;
+  text-align: center;
+  height: 40px;
+  width: 210px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-rotate a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 30px 30px;
+  text-decoration: none;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-rotate a#btn-rotate-clockwise {
+  background-image: url("../../images/arrows/rotateright.png");
+  top: 0;
+  left: 100px;
+  color: #f00;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-rotate a#btn-rotate-counter-clockwise {
+  background-image: url("../../images/arrows/rotateleft.png");
+  top: 0;
+  left: 60px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-scale {
+  position: relative;
+  text-align: center;
+  height: 40px;
+  width: 210px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-scale a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 30px 30px;
+  text-decoration: none;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-scale a#btn-scale-increase {
+  background-image: url("../../images/arrows/plus.png");
+  top: 0;
+  left: 100px;
+  color: #f00;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-scale a#btn-scale-decrease {
+  background-image: url("../../images/arrows/minus.png");
+  top: 0;
+  left: 60px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-opacity {
+  position: relative;
+  text-align: center;
+  height: 40px;
+  width: 210px;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-opacity a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: 30px 30px;
+  text-decoration: none;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-opacity a#btn-opacity-increase {
+  background-image: url("../../images/arrows/plus.png");
+  top: 0;
+  left: 100px;
+  color: #f00;
+}
+section#controls-menu div#button-controls section#shape-controls div#section-opacity a#btn-opacity-decrease {
+  background-image: url("../../images/arrows/minus.png");
+  top: 0;
+  left: 60px;
+}

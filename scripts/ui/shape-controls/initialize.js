@@ -46,111 +46,72 @@ function buildShapeControlsElements() {
     shapeControls.btnUp = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-up')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('U');
+        .addClass('btn-shape-control');
 
     shapeControls.btnDown = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('D');
+        .addClass('btn-shape-control');
 
     shapeControls.btnLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-left')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('L');
+        .addClass('btn-shape-control');
 
     shapeControls.btnRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-right')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('R');
+        .addClass('btn-shape-control');
 
     shapeControls.btnUpLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-up-left')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('UL');
+        .addClass('btn-shape-control');
 
     shapeControls.btnUpRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-up-right')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-      
-        .html('UR');
+        .addClass('btn-shape-control');
 
     shapeControls.btnDownLeft = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down-left')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('DL');
+        .addClass('btn-shape-control');
 
     shapeControls.btnDownRight = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-down-right')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-      
-        .html('DR');
+        .addClass('btn-shape-control');
 
     shapeControls.btnRotateClockwise = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-rotate-clockwise')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        
-        .html('Right');
+        .addClass('btn-shape-control');
 
     shapeControls.btnRotateCounterClockwise = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-rotate-counter-clockwise')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-
-        .html('Left');
+        .addClass('btn-shape-control');
 
     shapeControls.btnScaleIncrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-scale-increase')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-
-        .html('+');
+        .addClass('btn-shape-control');
 
     shapeControls.btnScaleDecrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-scale-decrease')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        .html('-');
+        .addClass('btn-shape-control');
 
     shapeControls.btnOpacityIncrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-opacity-increase')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        .html('+');
+        .addClass('btn-shape-control');
 
     shapeControls.btnOpacityDecrease = $('<a />')
         .attr('href', '#')
         .attr('id', 'btn-opacity-decrease')
-        .addClass('btn-shape-control')
-        .css('text-decoration', 'none')
-        .html('-');
+        .addClass('btn-shape-control');
 
     shapeControls.btnCommit = $('<a />')
         .attr('href', '#')
@@ -191,10 +152,7 @@ function buildShapeControlsElements() {
         .append($('<p />').html('opacity'))
         .append(shapeControls.sectionOpacity)
         .append(shapeControls.btnCommit)
-        .appendTo('body')
-        .accordion({
-            collapsible: true
-        });
+        .appendTo('#button-controls');
 }
 
 function initializeShapeControlsEvents() {
