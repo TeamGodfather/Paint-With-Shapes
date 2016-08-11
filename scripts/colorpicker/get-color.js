@@ -7,6 +7,7 @@ function getColor() {
     // }
 
     var canvasPlace = document.getElementById('colorpicker');
+    canvasPlace.style.display = 'block';
     var canvas = document.createElement('canvas');
     canvas.style.display = 'block';
     canvas.style.float = 'left';
@@ -32,16 +33,17 @@ function getColor() {
     function init(imageObj) {
         var mouseDown = false;
 
-        canvas.addEventListener('mouseout', function () {
-            canvas.remove();
-        });
-
+        // canvas.addEventListener('mouseout', function () {
+        //     canvas.remove();
+        // });
         ctx.strokeStyle = '#444';
         ctx.lineWidth = 2;
 
-        canvas.addEventListener('mousedown', function (evt) {
+        $('#colorpicker').on('mousedown', function (evt) {
+            if(!(evt.target instanceof HTMLCanvasElement)){
+                return;
+            }
             mouseDown = true;
-
             var color,
                 mousePos = getMousePos(canvas, evt);
 
@@ -56,13 +58,19 @@ function getColor() {
                 color = 'rgb(' + data[0] + ',' + data[1] + ',' + data[2] + ')';
                 drawColor(color);
             }
-        }, false);
+        });
 
-        canvas.addEventListener('mouseup', function (evt) {
+        $('#colorpicker').on('mouseup', function (evt) {
+            if(!(evt.target instanceof HTMLCanvasElement)){
+                return;
+            }
+
             mouseDown = false;
-        }, false);
+            canvas.remove();
+            canvasPlace.style.display = 'none';
+        });
 
-        canvas.addEventListener('mousemove', function (evt) {
+        $('#colorpicker').on('mousemove', function (evt) {
             var color,
                 mousePos = getMousePos(canvas, evt);
 
@@ -77,7 +85,7 @@ function getColor() {
 
                 drawColor(color);
             }
-        }, false);
+        });
 
         ctx.drawImage(imageObj, 0, 0);
 

@@ -117,8 +117,7 @@ function buildShapeControlsElements() {
         .attr('href', '#')
         .attr('id', 'btn-commit')
         .addClass('btn-shape-control')
-        .html('commit to layer')
-        .css('text-decoration', 'none');
+        .html('commit');
 
     shapeControls.sectionMovement
         .append(shapeControls.btnUpLeft)

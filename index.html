@@ -19,7 +19,10 @@
 
     <link rel="stylesheet" type="text/css" href="styles/controls-menu.css">
 
-    <link rel="stylesheet" type="text/css" href="styles/controls/controls.css">    
+    <link rel="stylesheet" type="text/css" href="styles/controls/controls.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/colorpicker.css">
+    
 </head>
 
 <body>
@@ -57,37 +60,37 @@
                 <li>
                     <a href="javascript:void(0)" class="button, button-style" id="emoticons-button" onclick="dropDown()">Emoticons</a>
                     <div class="dropdown-content" id="myDropdown">
-                        <img src="images/blink.png" />
-                        <img src="images/crying.png" />
-                        <img src="images/inlove.png" />
-                        <img src="images/laughing.png" />
-                        <img src="images/sick.png" />
-                        <img src="images/smile.png" />
-                        <img src="images/amazed.png" />
-                        <img src="images/angry.png" />
-                        <img src="images/big-eyes.png" />
-                        <img src="images/confused.png" />
-                        <img src="images/dissapointed.png" />
-                        <img src="images/eating.png" />
-                        <img src="images/haha.png" />
-                        <img src="images/happy.png" />
-                        <img src="images/happy2.png" />
-                        <img src="images/headache.png" />
-                        <img src="images/hot.png" />
-                        <img src="images/kiss.png" />
-                        <img src="images/mouth.png" />
-                        <img src="images/nerd.png" />
-                        <img src="images/none.png" />
-                        <img src="images/pissed-off.png" />
-                        <img src="images/pleased.png" />
-                        <img src="images/satisfied.png" />
-                        <img src="images/shiny.png" />
-                        <img src="images/shy.png" />
-                        <img src="images/smily.png" />
-                        <img src="images/star.png" />
-                        <img src="images/tired.png" />
-                        <img src="images/toungy.png" />
-                        <img src="images/worried.png" />
+                        <img src="images/blink.png" class="emoticon, blink" />
+                        <img src="images/crying.png" class="emoticon, crying" />
+                        <img src="images/inlove.png" class="emoticon, inlove" />
+                        <img src="images/laughing.png" class="emoticon, laughing" />
+                        <img src="images/sick.png" class="emoticon, sick" />
+                        <img src="images/smile.png" class="emoticon, smile" />
+                        <img src="images/amazed.png" class="emoticon, amazed" />
+                        <img src="images/angry.png" class="emoticon, angry" />
+                        <img src="images/big-eyes.png" class="emoticon, big-eyes" />
+                        <img src="images/confused.png" class="emoticon, confused" />
+                        <img src="images/dissapointed.png" class="emoticon, dissapointed" />
+                        <img src="images/eating.png" class="emoticon, eating" />
+                        <img src="images/haha.png" class="emoticon, haha" />
+                        <img src="images/happy.png" class="emoticon, happy" />
+                        <img src="images/happy2.png" class="emoticon, happy2" />
+                        <img src="images/headache.png" class="emoticon, headache" />
+                        <img src="images/hot.png" class="emoticon, hot" />
+                        <img src="images/kiss.png" class="emoticon, kiss" />
+                        <img src="images/mouth.png" class="emoticon, mouth" />
+                        <img src="images/nerd.png" class="emoticon, nerd" />
+                        <img src="images/none.png" class="emoticon, none" />
+                        <img src="images/pissed-off.png" class="emoticon, pissed-off" />
+                        <img src="images/pleased.png" class="emoticon, pleased" />
+                        <img src="images/satisfied.png" class="emoticon, satisfied" />
+                        <img src="images/shiny.png" class="emoticon, shiny" />
+                        <img src="images/shy.png" class="emoticon, shy" />
+                        <img src="images/smily.png" class="emoticon, smily" />
+                        <img src="images/star.png" class="emoticon, star" />
+                        <img src="images/tired.png" class="emoticon, tired" />
+                        <img src="images/toungy.png" class="emoticon, toungy" />
+                        <img src="images/worried.png" class="emoticon, worried" />
                     </div>
                 </li>
                 <li>
@@ -111,35 +114,56 @@
 
         <section id="shapes-menu">
             <ul id="shapes">
-                <li class="shape" id="square">
-                    <a href="#">square</a>
-                </li>
-                <li class="shape" id="rectangle">
-                    <a href="#">rectangle</a>
-                </li>
                 <li class="shape" id="star">
-                    <a href="#">star</a>
-                </li>
-                <li class="shape" id="hexagon">
-                    <a href="#">hexagon</a>
+                    <a href="#">Star</a>
                 </li>
                 <li class="shape" id="line">
-                    <a href="#">line</a>
-                </li>
-                <li class="shape" id="pentagon">
-                    <a href="#">pentagon</a>
-                </li>
-                <li class="shape" id="triangle">
-                    <a href="#">triangle</a>
+                    <a href="#">Line</a>
                 </li>
                 <li class="shape" id="ring">
-                    <a href="#">ring</a>
+                    <a href="#">Ring</a>
                 </li>
                 <li class="shape" id="circle">
-                    <a href="#">circle</a>
+                    <a href="#">Circle</a>
                 </li>
-                 <li class="shape" id="img">
-                    <a href="#" id="get-img">img</a>
+                <li class="shape" id="triangle">
+                    <a href="#">Triangle</a>
+                </li>
+                <li class="shape" id="square">
+                    <a href="#">Square</a>
+                </li>
+                <li class="shape" id="rectangle">
+                    <a href="#">Rectangle</a>
+                </li>
+                <li class="shape" id="pentagon">
+                    <a href="#">Pentagon</a>
+                </li>
+                <li class="shape" id="hexagon">
+                    <a href="#">Hexagon</a>
+                </li>
+                <li class="shape" id="heptagon">
+                    <a href="#">Heptagon</a>
+                </li>
+                <li class="shape" id="octagon">
+                    <a href="#">Octagon</a>
+                </li>
+                <li class="shape" id="nonegon">
+                    <a href="#">Nonegon</a>
+                </li>
+                <li class="shape" id="decagon">
+                    <a href="#">Decagon</a>
+                </li>
+                <li class="shape" id="undecagon">
+                    <a href="#">Undecagon</a>
+                </li>
+                <li class="shape" id="dodecagon">
+                    <a href="#">Dodecagon</a>
+                </li>
+                <li class="shape" id="tredecagon">
+                    <a href="#">Tredecagon</a>
+                </li>
+                <li class="shape" id="img">
+                    <a href="#" id="get-img">Image</a>
                     <input type="text" id="url-img" placeholder="Paste img URL here:">
                 </li>
             </ul>
@@ -147,7 +171,7 @@
 
         <section id="controls-menu">
             <header id="btn-container">
-                <a href="#" id="controls-menu-toggle">show controls</a>
+                <a href="#" id="controls-menu-toggle">Show controls</a>
             </header>
 
             <div id="button-controls">
@@ -171,16 +195,23 @@
     <script src="scripts/layers/layer-ui.js"></script>
 
     <script src="scripts/shapes/shapes-menu.js"></script>
-    <script src="scripts/shapes/shape-factory/square.js"></script>
-    <script src="scripts/shapes/shape-factory/rectangle.js"></script>
-    <script src="scripts/shapes/shape-factory/line.js"></script>
+    <script src="scripts/shapes/shape-factory/img.js"></script>
     <script src="scripts/shapes/shape-factory/star.js"></script>
-    <script src="scripts/shapes/shape-factory/hexagon.js"></script>
-    <script src="scripts/shapes/shape-factory/pentagon.js"></script>
-    <script src="scripts/shapes/shape-factory/triangle.js"></script>
+    <script src="scripts/shapes/shape-factory/line.js"></script>
     <script src="scripts/shapes/shape-factory/ring.js"></script>
     <script src="scripts/shapes/shape-factory/circle.js"></script>
-    <script src="scripts/shapes/shape-factory/img.js"></script>
+    <script src="scripts/shapes/shape-factory/triangle.js"></script>
+    <script src="scripts/shapes/shape-factory/square.js"></script>
+    <script src="scripts/shapes/shape-factory/rectangle.js"></script>
+    <script src="scripts/shapes/shape-factory/pentagon.js"></script>
+    <script src="scripts/shapes/shape-factory/hexagon.js"></script>
+    <script src="scripts/shapes/shape-factory/heptagon.js"></script>
+    <script src="scripts/shapes/shape-factory/octagon.js"></script>
+    <script src="scripts/shapes/shape-factory/nonegon.js"></script>
+    <script src="scripts/shapes/shape-factory/decagon.js"></script>
+    <script src="scripts/shapes/shape-factory/undecagon.js"></script>
+    <script src="scripts/shapes/shape-factory/dodecagon.js"></script>
+    <script src="scripts/shapes/shape-factory/tredecagon.js"></script>
 
 
     <script src="scripts/controls/keyboard-controls.js"></script>
