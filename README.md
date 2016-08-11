@@ -52,6 +52,9 @@
 ## Paint With Shapes
 
 - What's it all about ? 
+  - **Shapes**
+  - **sHaPes**
+  - **SHapeS**
 
 - Project is split into a lot of different files to avoid commit conflicts
 
