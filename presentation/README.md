@@ -48,7 +48,7 @@
 
 # Layer Manager Features
 
-- Add new layer on top
+- <strong>Add</strong> new layer on top
 
 - Remove any layer
 
