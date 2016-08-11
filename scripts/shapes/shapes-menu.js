@@ -17,7 +17,8 @@ function initializeShapesUI() {
             .on('click', function () {
                 shapesMenu.toggle();
             });
-    intializeMenuButtonsEvents();
+
+    intializeShapeMenuButtonsEvents();
 }
 
 function applyNewColorToCurrentActiveShape() {
@@ -29,7 +30,7 @@ function applyNewColorToCurrentActiveShape() {
     currentActiveShape.tempLayer.draw();
 }
 
-function intializeMenuButtonsEvents() {
+function intializeShapeMenuButtonsEvents() {
     var rectangle,
         star;
 
@@ -39,7 +40,7 @@ function intializeMenuButtonsEvents() {
                 typeOfShape,
                 newShape,
                 tempLayer;
-
+                
             if (clicked.hasClass('shape')) {
 
             } else if (clicked.parents('.shape')) {
@@ -50,11 +51,10 @@ function intializeMenuButtonsEvents() {
             typeOfShape = $(clicked).attr('id');
 
             if (currentActiveShape.shape) {
-               cancelCurrentActiveShape();
+                cancelCurrentActiveShape();
             }
 
             if (layersManager.current === null) {
-                // Create a new layer.
                 createNewKineticLayer();
             }
 
@@ -103,8 +103,8 @@ function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
         case implementedShapes.circle:
             newShape = createCircle();
             break;
-               case implementedShapes.img:
-            newShape= createImg();
+        case implementedShapes.img:
+            newShape = createImg();
             break;
         default:
             break;
