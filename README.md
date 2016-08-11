@@ -1,6 +1,10 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
-# Team GodFather
+# [Team GodFather's Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+
+## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html)
+
+## [Demo]()
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/the_godfather.jpg" style="top:30%; left:49%; width:30.36%; z-index:-1" /> -->
 
