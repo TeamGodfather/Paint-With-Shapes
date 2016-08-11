@@ -6,6 +6,8 @@
 
 ## [Demo]()
 
+![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
+
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/the_godfather.jpg" style="top:30%; left:49%; width:30.36%; z-index:-1" /> -->
 
 <div class="signature">
@@ -40,10 +42,6 @@
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Paint With Shapes
-
-![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
 
 <!-- ![](./imgs/withblackbg.png) -->
 
