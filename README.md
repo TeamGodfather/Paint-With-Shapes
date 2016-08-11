@@ -39,6 +39,8 @@
 
 # Paint With Shapes
 
+![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
+
 <!-- ![](./imgs/withblackbg.png) -->
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/withblackbg.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
@@ -81,6 +83,9 @@
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Layer Manager Screenshot
+
+![Layer Manager Screenshot](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/layer-manager.png "Layer Manager")
+
 
 <!-- ![](./imgs/layer-manager.png) -->
 
@@ -127,7 +132,7 @@
 
 # Shapes Screenshot
 
-![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
+![Shapes Screenshot](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/shapes.png "Shapes Demo")
 
 <!-- ![](./imgs/shapes.png) -->
 
@@ -172,6 +177,8 @@
 
 # Emoticons Screenshot
 
+![Emoticons Screenshot](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/emoticons.png "Emoticons Demo")
+
 <!-- ![](./imgs/emoticons.png) -->
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/emoticons.png" style="top:15%; width:100%; z-index:-1" /> -->
@@ -187,6 +194,8 @@
 
 # Color Picker Screenshot
 
+![Colorpicker Screenshot](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/colorpicker.png "Colorpicker Demo")
+
 <!-- ![](./imgs/colorpicker.png) -->
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/colorpicker.png" style="top:15%; width:100%; z-index:-1" /> -->
@@ -201,6 +210,8 @@
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Controls UI Screenshot
+
+![Controls UI Screenshot](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/controls.png "Controls UI Demo")
 
 <!-- ![](./imgs/controls.png) -->
 
