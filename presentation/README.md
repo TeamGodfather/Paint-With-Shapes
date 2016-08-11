@@ -54,7 +54,7 @@
   - **Shapes**
   - **sHaPes**
   - **SHapeS**
-  
+
 - Project is split into a lot of different files to avoid commit conflicts
 
 - Documentation .mds
@@ -206,3 +206,26 @@
 <!-- ![](./imgs/controls.png) -->
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/controls.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Controls UI Features
+
+- Takes advantage of **JQuery** .animate()
+
+- Visual way of controling without needing the keyboard
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Controls UI Features
+
+- Takes advantage of **JQuery** .animate()
+
+- Visual way of controling without needing the keyboard
+
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
+<!-- # Paint With Shapes
+## Questions? -->
