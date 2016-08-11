@@ -37,7 +37,18 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
+# Paint With Shapes
+
+<!-- ![](./imgs/githubgraphics.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
 # General Project Info
+
+## Paint With Shapes
 
 - What's it all about ? 
 
@@ -54,15 +65,15 @@
 
 # Used JS libraries
 
-- Kinetic.js 
+- **Kinetic.js** 
   - layer management
   - shapes management 
 
-- JQuery 
+- **JQuery** 
   - DOM manipulations 
   - .animate()
 
-- JQuery UI
+- **JQuery UI**
   - .draggable()
   - .resizeable() 
 
@@ -153,3 +164,33 @@
 - **Alpha**
   - Q/ E keys
   - -/ + UI buttons
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Emoticons Screenshot
+
+<!-- ![](./imgs/shapes.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Emoticons
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Color Picker Screenshot
+
+<!-- ![](./imgs/shapes.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Color Picker
