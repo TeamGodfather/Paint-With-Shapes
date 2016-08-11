@@ -20,9 +20,9 @@ function initializeClearCanvasButton() {
             document.querySelector('#layer-list').innerHTML = '';
         });
 
-    var btnToggleColor = document
-        .querySelector('#toggle-color')
-        .addEventListener('click', function () {
-            getColor();
-        });
+    // var btnToggleColor = document
+    //     .querySelector('#toggle-color')
+    //     .addEventListener('click', function () {
+    //         getColor();
+    //     });
 }
