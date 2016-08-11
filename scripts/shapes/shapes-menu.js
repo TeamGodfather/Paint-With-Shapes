@@ -71,6 +71,8 @@ function intializeShapeMenuButtonsEvents() {
             currentActiveShape.shape = newShape;
             currentActiveShape.tempLayer = tempLayer;
             currentActiveShape.tempLayer.draw();
+
+            var shapesMenu = $('#shapes-menu').toggle();
         });
 }
 
