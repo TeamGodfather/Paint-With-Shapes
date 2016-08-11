@@ -1,11 +1,10 @@
 section#shapes-menu {
   background-color: white;
-  position: fixed;
   display: none;
   left: 20px;
-    top: 400px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   width: 200px;
+  margin-top: -50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 200px;
 }
 section#shapes-menu ul#shapes {
   list-style: none;
@@ -14,7 +13,7 @@ section#shapes-menu ul#shapes {
 section#shapes-menu ul li a{
   text-decoration: none;
   color: grey;
-   padding-left: 20px;
+  padding-left: 20px;
   padding-right: 20px;
   margin: 30px;
 }
@@ -27,4 +26,7 @@ border-radius: 10px;
 
 section#shapes-menu ul li input#url-img{
   margin-left: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 80%;
 }

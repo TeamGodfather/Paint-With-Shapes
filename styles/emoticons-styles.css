@@ -1,7 +1,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: -250px;
+    margin-top: -150px;
     background-color: #fff;
     max-width: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
