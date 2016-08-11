@@ -18,7 +18,7 @@
 
 # Team Godfather Members
 
-| Name | TALS | GitHub |
+| Name | TILS | GitHub |
 | :------------- | :------------------- | :------------------------------------------|
 | Антонио Димитров  | Antonio.Dimitrov       | [AntonioDimitrov7 ](https://github.com/AntonioDimitrov7)                   |
 | Ивайло Андонов   | ivail0 | [ivailoAndonov](https://github.com/ivailoAndonov)       |
