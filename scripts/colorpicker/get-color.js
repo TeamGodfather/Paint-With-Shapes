@@ -83,17 +83,17 @@ function getColor() {
                 drawColor(color);
             }
         });
-
-        $('#colorpicker').on('mouseup', function (evt) {
-            if(!(evt.target instanceof HTMLCanvasElement)){
-                return;
-            }
-
-            isActive = false;
-            mouseDown = false;
-            canvas.remove();
-            canvasPlace.style.display = 'none';
-        });
+        // i feel like this is not the right way to close the colorpicker. If you like it tho just uncomment it
+        // $('#colorpicker').on('mouseup', function (evt) {
+        //     if(!(evt.target instanceof HTMLCanvasElement)){
+        //         return;
+        //     }
+        //
+        //     isActive = false;
+        //     mouseDown = false;
+        //     canvas.remove();
+        //     canvasPlace.style.display = 'none';
+        // });
 
         $('#colorpicker').on('mousemove', function (evt) {
             var color,
