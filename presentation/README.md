@@ -185,21 +185,12 @@
 
 # Color Picker Screenshot
 
-<!-- ![](./imgs/colorpicker.png) -->
+<!-- ![](./imgs/shapes.png) -->
 
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/colorpicker.png" style="top:15%; width:100%; z-index:-1" /> -->
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 
 <!-- section start -->
 <!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Color Picker
-
-<!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Controls UI Screenshot
-
-<!-- ![](./imgs/controls.png) -->
-
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/controls.png" style="top:15%; width:100%; z-index:-1" /> -->
