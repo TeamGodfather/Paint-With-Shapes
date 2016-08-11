@@ -8,6 +8,7 @@ var implementedShapes = {
     'triangle': 'triangle',
     'ring': 'ring',
     'circle': 'circle',
+    'ellipse': 'ellipse',
     'img': 'img'
 };
 
@@ -106,6 +107,9 @@ function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
         case implementedShapes.img:
             newShape = createImg();
             break;
+         case implementedShapes.ellipse:
+            newShape = createEllipse();
+            break;   
         default:
             break;
     }
