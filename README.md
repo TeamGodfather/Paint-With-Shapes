@@ -226,7 +226,7 @@
 
 - Takes advantage of **JQuery** .animate()
 
-- Visual way of controling without needing the keyboard
+- Scraps the need for a keyboard
 
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
