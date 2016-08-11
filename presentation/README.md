@@ -66,10 +66,9 @@
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Shapes Features
-
-	- Move
-	- Rotate
-	- Scale
-	- Alpha 
-	- Control with keyboard
-	- Control with UI
+  - Move
+  - Rotate
+  - Scale
+  - Alpha 
+  - Control with keyboard
+  - Control with UI
