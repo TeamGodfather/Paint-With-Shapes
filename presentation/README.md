@@ -48,13 +48,13 @@
 
 # Layer Manager Features
 
-- <strong>Add</strong> new layer on top
+- **Add** new layer on top
 
-- Remove any layer
+- **Remove** any layer
 
-- Flatten all layers - save as a single image
+- **Flatten** all layers - save as a single image
 
-- Insert background layer from url
+- **Insert** background layer from url
 
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
@@ -70,14 +70,10 @@
 
 # Shapes Features
 
-- Move
+- **Move**
 
-- Rotate
+- **Rotate**
 
-- Scale
+- **Scale**
 
-- Alpha 
-
-- Control with keyboard
-
-- Control with UI
+- **Alpha**
