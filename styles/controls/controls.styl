@@ -19,15 +19,42 @@ btn-style()
     background-size 30px 30px
 
 section#controls-menu
+    color white
 
     header#btn-container
 
         a#controls-menu-toggle
+            color white
+            background-image: -webkit-linear-gradient(top, #9acd32, #719425);
+            background-image: -moz-linear-gradient(top, #9acd32, #719425);
+            background-image: -ms-linear-gradient(top, #9acd32, #719425);
+            background-image: -o-linear-gradient(top, #9acd32, #719425);
+            background-image: linear-gradient(to bottom, #9acd32, #719425);
+            text-shadow: 2px 2px 5px #000000;
+            -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+            -moz-box-shadow: 3px 3px 5px #4a4a4a;
+            box-shadow: 3px 3px 5px #4a4a4a;
+            font-family: Georgia, inherit;
             text-decoration: none
 
+            &:hover 
+                color darken(white, 10%)
+
     div#button-controls
+        text-transform: capitalize
         
         section#shape-controls
+            border-radius: 15px
+            background-image: -webkit-linear-gradient(top, #9acd32, #719425);
+            background-image: -moz-linear-gradient(top, #9acd32, #719425);
+            background-image: -ms-linear-gradient(top, #9acd32, #719425);
+            background-image: -o-linear-gradient(top, #9acd32, #719425);
+            background-image: linear-gradient(to bottom, #9acd32, #719425);
+            text-shadow: 2px 2px 5px #000000;
+            -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+            -moz-box-shadow: 3px 3px 5px #4a4a4a;
+            box-shadow: 3px 3px 5px #4a4a4a;
+            font-family: Georgia, inherit;
             padding 20px
             text-align: center
 
@@ -143,3 +170,16 @@ section#controls-menu
                     background-image btn-minus-img
                     top 0
                     left 60px 
+            
+            a#btn-commit
+                text-shadow: 2px 2px 5px #000000;
+                font-family: Georgia, inherit;
+                color white
+                text-transform: capitalize
+                text-decoration: none
+                border 1px solid black
+                border-radius: 15px
+                padding 5px 15px
+
+                &:hover 
+                    background-color: rgba(255, 255,255,0.3)

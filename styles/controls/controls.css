@@ -1,7 +1,38 @@
+section#controls-menu {
+  color: #fff;
+}
 section#controls-menu header#btn-container a#controls-menu-toggle {
+  color: #fff;
+  background-image: -webkit-linear-gradient(top, #9acd32, #719425);
+  background-image: -moz-linear-gradient(top, #9acd32, #719425);
+  background-image: -ms-linear-gradient(top, #9acd32, #719425);
+  background-image: -o-linear-gradient(top, #9acd32, #719425);
+  background-image: linear-gradient(to bottom, #9acd32, #719425);
+  text-shadow: 2px 2px 5px #000;
+  -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+  -moz-box-shadow: 3px 3px 5px #4a4a4a;
+  box-shadow: 3px 3px 5px #4a4a4a;
+  font-family: Georgia, inherit;
   text-decoration: none;
 }
+section#controls-menu header#btn-container a#controls-menu-toggle:hover {
+  color: #e6e6e6;
+}
+section#controls-menu div#button-controls {
+  text-transform: capitalize;
+}
 section#controls-menu div#button-controls section#shape-controls {
+  border-radius: 15px;
+  background-image: -webkit-linear-gradient(top, #9acd32, #719425);
+  background-image: -moz-linear-gradient(top, #9acd32, #719425);
+  background-image: -ms-linear-gradient(top, #9acd32, #719425);
+  background-image: -o-linear-gradient(top, #9acd32, #719425);
+  background-image: linear-gradient(to bottom, #9acd32, #719425);
+  text-shadow: 2px 2px 5px #000;
+  -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+  -moz-box-shadow: 3px 3px 5px #4a4a4a;
+  box-shadow: 3px 3px 5px #4a4a4a;
+  font-family: Georgia, inherit;
   padding: 20px;
   text-align: center;
 }
@@ -133,4 +164,17 @@ section#controls-menu div#button-controls section#shape-controls div#section-opa
   background-image: url("../../images/arrows/minus.png");
   top: 0;
   left: 60px;
+}
+section#controls-menu div#button-controls section#shape-controls a#btn-commit {
+  text-shadow: 2px 2px 5px #000;
+  font-family: Georgia, inherit;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+section#controls-menu div#button-controls section#shape-controls a#btn-commit:hover {
+  background-color: rgba(255,255,255,0.3);
 }
