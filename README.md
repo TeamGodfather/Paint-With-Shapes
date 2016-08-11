@@ -2,7 +2,7 @@
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # [Team GodFather's Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
-## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html) | [Demo]()
+## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html) | [Demo](https://youtu.be/xgq6e8AWcGs) | [Artistic Demo](https://youtu.be/tsl9irVfDbA)
 
 ![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
 
