@@ -1,20 +1,13 @@
 var implementedShapes = {
-    'tredecagon': 'tredecagon',
-    'dodecagon': 'dodecagon',
-    'undecagon': 'undecagon',
-    'decagon': 'decagon',
-    'nonegon': 'nonegon',
-    'octagon': 'octagon',
-    'heptagon': 'heptagon',
-    'hexagon': 'hexagon',
-    'pentagon': 'pentagon',
-    'rectangle': 'rectangle',
     'square': 'square',
-    'triangle': 'triangle',
-    'circle': 'circle',
-    'ring': 'ring',
-    'line': 'line',
+    'rectangle': 'rectangle',
     'star': 'star',
+    'hexagon': 'hexagon',
+    'line': 'line',
+    'pentagon': 'pentagon',
+    'triangle': 'triangle',
+    'ring': 'ring',
+    'circle': 'circle',
     'img': 'img'
 };
 
@@ -83,60 +76,41 @@ function intializeMenuButtonsEvents() {
 function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
     var newShape;
     switch (typeOfShape) {
-        case implementedShapes.tredecagon:
-            newShape = createTredecagon();
-            break;
-        case implementedShapes.dodecagon:
-            newShape = createDodecagon();
-            break;
-        case implementedShapes.undecagon:
-            newShape = createUndecagon();
-            break;
-        case implementedShapes.decagon:
-            newShape = createDecagon();
-            break;
-        case implementedShapes.nonegon:
-            newShape = createNonegon();
-            break;
-        case implementedShapes.octagon:
-            newShape = createOctagon();
-            break;
-        case implementedShapes.heptagon:
-            newShape = createHeptagon();
-            break;
-        case implementedShapes.hexagon:
-            newShape = createHexagon();
-            break;
-        case implementedShapes.pentagon:
-            newShape = createPentagon();
+        case implementedShapes.square:
+            newShape = createSquare();
             break;
         case implementedShapes.rectangle:
             newShape = createRectangle();
             break;
-        case implementedShapes.square:
-            newShape = createSquare();
+        case implementedShapes.star:
+            newShape = createStar();
+            break;
+        case implementedShapes.hexagon:
+            newShape = createHexagon();
+            break;
+        case implementedShapes.line:
+            newShape = createLine();
+            break;
+        case implementedShapes.pentagon:
+            newShape = createPentagon();
             break;
         case implementedShapes.triangle:
             newShape = createTriangle();
             break;
+        case implementedShapes.ring:
+            newShape = createRing();
+            break;
         case implementedShapes.circle:
             newShape = createCircle();
             break;
-        case implementedShapes.ring:
-            newShape = createRing();
-            break;        
-        case implementedShapes.line:
-            newShape = createLine();
-            break;
-         case implementedShapes.star:
-            newShape = createStar();
-            break;
-        case implementedShapes.img:
+               case implementedShapes.img:
             newShape= createImg();
             break;
         default:
             break;
     }
+    return newShape;
+}
 
 function getActiveOutlineStrokeColor(shape) {
 
