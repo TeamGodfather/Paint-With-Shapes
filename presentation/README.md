@@ -9,3 +9,18 @@
 	<p class="signature-initiative">Telerik Academy by Progress</p>
 	<a href="https://github.com/TeamGodfather" class="signature-link">Link to the GitHub repository </a>
 </div>
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
+
+# Team Godfather Members
+
+| Name | TALS | GitHub |
+| :------------- | :------------------- | :------------------------------------------|
+| Антонио Димитров  | Antonio.Dimitrov       | [AntonioDimitrov7 ](https://github.com/AntonioDimitrov7)                   |
+| Ивайло Андонов   | ivail0 | [ivailoAndonov](https://github.com/ivailoAndonov)       |
+| Мартин Йотов    | martinyotov  | [MartinYotov](https://github.com/MartinYotov)         |
+| Миглена Петрова | Miglena_Petrova  | [MiglenaPetrova](https://github.com/MiglenaPetrova)         |
+| Силвия Ботева | sboteva1    | [silweto7](https://github.com/silweto7)                 |
+| Тодор Георгиев | Toshe7o    | [georgievtodor](https://github.com/georgievtodor)               |
+| Христо Тодоров | todorovh      | [shakuu](https://github.com/shakuu) |
