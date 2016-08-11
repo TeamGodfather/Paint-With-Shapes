@@ -48,9 +48,22 @@
 
 # Layer Manager Features
 
+- **LayersManager** 
+  - Each Kinetic.Layer() ( canvas ) is wrapped in an object with ID and Layer
+  - Stored in an Array for ease of management
+
 - **Add** new layer on top
+  - Creates a new generic Layer
+  - ID genererator function assigns unique ID
+  - Updates List
 
 - **Remove** any layer
+  - Remove from Kinetic.Stage()
+  - Remove from LayersManager
+
+- **Select** current layer
+  - Shapes are added to the currently active layer
+  - Layers above the selected layer are invisible
 
 - **Flatten** all layers - save as a single image
 
@@ -70,10 +83,24 @@
 
 # Shapes Features
 
+- **Create**
+  - Factory returns the correct shape
+  - Assigns current color
+  - Shape exist in a temporary layer until it is committed to an existing layer
+  
 - **Move**
+  - Arrow keys
+  - Drag with mouse
+  - Arrow UI buttons
 
 - **Rotate**
+  - A/ D keys
+  - Rotate UI buttons
 
 - **Scale**
+  - W/ S keys
+  - -/ + UI buttons
 
 - **Alpha**
+  - Q/ E keys
+  - -/ + UI buttons
