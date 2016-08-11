@@ -170,9 +170,9 @@
 
 # Emoticons Screenshot
 
-<!-- ![](./imgs/shapes.png) -->
+<!-- ![](./imgs/emoticons.png) -->
 
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/emoticons.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 
 <!-- section start -->
