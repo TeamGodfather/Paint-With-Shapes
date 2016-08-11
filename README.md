@@ -1,72 +1,207 @@
-# [Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
+<!-- section start -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
+# Team GodFather
 
-## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html)
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/the_godfather.jpg" style="top:30%; left:49%; width:30.36%; z-index:-1" /> -->
 
-## [list of all existing functions, by file](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/docs/list-of-functions.md)
+<div class="signature">
+	<p class="signature-course">JS UI&DOM TeamWork</p>
+	<p class="signature-initiative">Telerik Academy by Progress</p>
+	<a href="https://github.com/TeamGodfather" class="signature-link">Link to the GitHub repository </a>
+</div>
 
-[Mona Lisa demo](https://youtu.be/k3h-ivpfPS0?t=9s)
-[Prince demo](https://www.youtube.com/watch?v=JPPB51vI1XE)
-[Iron Man demo](https://www.youtube.com/watch?v=AkHjRe1ZRKQ)
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Team Godfather Members
+
+| Name | TALS | GitHub |
+| :------------- | :------------------- | :------------------------------------------|
+| Антонио Димитров  | Antonio.Dimitrov       | [AntonioDimitrov7 ](https://github.com/AntonioDimitrov7)                   |
+| Ивайло Андонов   | ivail0 | [ivailoAndonov](https://github.com/ivailoAndonov)       |
+| Мартин Йотов    | martinyotov  | [MartinYotov](https://github.com/MartinYotov)         |
+| Миглена Петрова | Miglena_Petrova  | [MiglenaPetrova](https://github.com/MiglenaPetrova)         |
+| Силвия Ботева | sboteva1    | [silweto7](https://github.com/silweto7)                 |
+| Тодор Георгиев | Toshe7o    | [georgievtodor](https://github.com/georgievtodor)               |
+| Христо Тодоров | todorovh      | [shakuu](https://github.com/shakuu) |
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# GitHub graphics
+
+<!-- ![](./imgs/githubgraphics.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Paint With Shapes
+
+<!-- ![](./imgs/withblackbg.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/withblackbg.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# General Project Info
+
+## Paint With Shapes
+
+- What's it all about ? 
+
+- Project is split into a lot of different files to avoid commit conflicts
+
+- Documentation .mds
+  - Features
+  - Shapes list todo
+  - List of implemented functions by files 
+  - Utilizing GitHub's Issues
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Used JS libraries
+
+- **Kinetic.js** 
+  - layer management
+  - shapes management 
+
+- **JQuery** 
+  - DOM manipulations 
+  - .animate()
+
+- **JQuery UI**
+  - .draggable()
+  - .resizeable() 
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Layer Manager Screenshot
+
+<!-- ![](./imgs/layer-manager.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/layer-manager.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Layer Manager Features
+
+- **LayersManager** 
+  - Each Kinetic.Layer() ( canvas ) is wrapped in an object with ID and Layer
+  - Stored in an Array for ease of management
+
+- **Add** new layer on top
+  - Creates a new generic Layer
+  - ID genererator function assigns unique ID
+  - Updates List
+
+- **Remove** any layer
+  - Remove from Kinetic.Stage()
+  - Remove from LayersManager
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# More Layer Manager Features
+
+- **Select** current layer
+  - Shapes are added to the currently active layer
+  - Layers above the selected layer are invisible
+
+- **Flatten** all layers - save as a single image
+  - Move all existing shapes to bottom layer
+  - Remove all existing layers ( except for the bottom one )
+
+- **Insert** background layer from url
+  - Loads an image from input url
+  - Inserts it on a new layer
+  - Inserts the new layer as a bottom layer
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Shapes Screenshot
+
+![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
+
+<!-- ![](./imgs/shapes.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Shapes Features
+
+- **Create**
+  - Factory returns the correct shape
+  - Each shape has a separate creation function
+  - Assigns the currently selected fill color
+  - Assigns a stroke color to differentiate the active shape from the already existing shapes
+  - New shape exist in a temporary layer until it is committed to an existing layer
+  
+- **Move**
+  - Arrow keys - 4 directions/ 5px step
+  - Arrow UI buttons - 8 directions/ 5px step  
+  - Drag with mouse - free form
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# More Shapes Features
+
+- **Rotate**
+  - A/ D keys
+  - Rotate UI buttons
+
+- **Scale**
+  - W/ S keys
+  - -/ + UI buttons
+
+- **Alpha**
+  - Q/ E keys
+  - -/ + UI buttons
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Emoticons Screenshot
+
+<!-- ![](./imgs/emoticons.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/emoticons.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 
-## Current Controls
-  - Enter commit shape to layer
-  - A / D rotate left/ right
-  - W / S increase/ decrease size
-  - Q / E decrease/ increase opacity
-  - Up/ Down/ Left/ Right Arrow move shape
-  - ESC cancel current shape
-  - drag shape with the mouse
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
-## Features to be implemented
+# Emoticons
 
-1. Shapes Library
-    - js files containing different shapes
-    - [proposed list of shapes (work in progress)](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/Shapes.md)
-2. Choose a Shape menu
-    - menu to pick a shape
-    - instantiate the shape
-3. Color Picker
-    - pick the current color
-    - return the color as string
-4. Rotate Shape - done
-    - parameter shape 
-    - return the resulting shape
-    - left / right arrow
-5. Scale Shape - done
-    - parameter shape
-    - return the scaled shape
-    - up / down arrow
-5. Shape Opacity - done
-6. UI Visual Controls- done ( to be refined )
-    - rotate shape
-    - scale shape 
-    - control opacity
-    - commit shape to layer
-6. Add Shape to Layer - done
-    - place the current shape to the current layer
-    - mouse click at current position
-6. Create new Layer done
-    - Create new Layer, on top of the currently selected layer
-7. Navigate Layers done
-    - move down -> hide layers above
-    - move up -> display layers
-8. Undo 
-   - remove latest shape
-   - clear selected layer
-8. Publish Drawing
-   - facebook
-   - twitter
-9. Import background picure from link
-10. Control shape entirely with keyboard in addition to full UI controls - done
-    - Enter commit shape to layer
-    - A / D rotate left/ right
-    - W / S increase/ decrease change size
-    - Q / E decrease/ increase opacity
-    - Up/ Down/ Left/ Right Arrow move shape
-    - ESC cancel current shape
-11. Stickers
-    - emote icons menu - done
-    - apply image as a shape
-12. Resize canvas
-13. Text
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Color Picker Screenshot
+
+<!-- ![](./imgs/colorpicker.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/colorpicker.png" style="top:15%; width:100%; z-index:-1" /> -->
+
+
+<!-- section start -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Color Picker
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Controls UI Screenshot
+
+<!-- ![](./imgs/controls.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/controls.png" style="top:15%; width:100%; z-index:-1" /> -->
