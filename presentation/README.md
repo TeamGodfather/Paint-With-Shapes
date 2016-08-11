@@ -168,12 +168,6 @@
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/emoticons.png" style="top:15%; width:100%; z-index:-1" /> -->
 
-
-<!-- section start -->
-<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Emoticons
-
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
@@ -182,12 +176,6 @@
 <!-- ![](./imgs/colorpicker.png) -->
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/colorpicker.png" style="top:15%; width:100%; z-index:-1" /> -->
-
-
-<!-- section start -->
-<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Color Picker
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
@@ -201,11 +189,15 @@
 <!-- section start -->
 <!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
-# Controls UI Features
+# UI Features
+
+**Emoticons**
+
+**Color Picker**
+
+**Controls UI**
 
 - Takes advantage of **JQuery** .animate()
-
-- Scraps the need for a keyboard
 
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
