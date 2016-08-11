@@ -3,7 +3,8 @@ var implementedShapes = {
     'star': 'star',
     'line': 'line',
     'ring': 'ring',
-    'circle': 'circle',  
+    'ellipse': 'ellipse',
+    'circle': 'circle',
     'triangle': 'triangle',
     'square': 'square',
     'rectangle': 'rectangle',
@@ -47,7 +48,7 @@ function intializeShapeMenuButtonsEvents() {
                 typeOfShape,
                 newShape,
                 tempLayer;
-                
+
             if (clicked.hasClass('shape')) {
 
             } else if (clicked.parents('.shape')) {
@@ -85,18 +86,18 @@ function intializeShapeMenuButtonsEvents() {
 function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
     var newShape;
     switch (typeOfShape) {
-         case implementedShapes.img:
-            newShape= createImg();
+        case implementedShapes.img:
+            newShape = createImg();
             break;
-         case implementedShapes.star:
+        case implementedShapes.star:
             newShape = createStar();
             break;
-         case implementedShapes.line:
+        case implementedShapes.line:
             newShape = createLine();
             break;
         case implementedShapes.ring:
             newShape = createRing();
-            break; 
+            break;
         case implementedShapes.circle:
             newShape = createCircle();
             break;
@@ -120,23 +121,25 @@ function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
             break;
         case implementedShapes.octagon:
             newShape = createOctagon();
-            break;       
+            break;
         case implementedShapes.nonegon:
             newShape = createNonegon();
-            break;        
+            break;
         case implementedShapes.decagon:
             newShape = createDecagon();
             break;
         case implementedShapes.undecagon:
             newShape = createUndecagon();
-            break;  
-      case implementedShapes.dodecagon:
+            break;
+        case implementedShapes.dodecagon:
             newShape = createDodecagon();
             break;
         case implementedShapes.tredecagon:
             newShape = createTredecagon();
             break;
-
+        case implementedShapes.ellipse:
+            newShape = createEllipse();
+            break;
         default:
             break;
     }
