@@ -127,7 +127,7 @@ function setActiveLayer(id) {
     length = layersManager.allLayers.length;
     for (index = 0; index < length; index += 1) {
         if (found) {
-            layersManager.allLayers[index].layer.setOpacity(0);
+            layersManager.allLayers[index].layer.setOpacity(0.01);
         } else {
             layersManager.allLayers[index].layer.setOpacity(1);
         }

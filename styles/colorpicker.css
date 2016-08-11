@@ -5,14 +5,13 @@ div.kineticjs-content {
 }
 div#colorpicker {
   position: fixed;
-  top: 10px;
-  left: 50px;
-  width: 200px;
-  height: 200px;
+  top: 0px;
+  left: 280px;
+  width: 250px;
+  height: 250px;
   z-index: 10000;
-}
-div#colorpicker canvas {
-  position: fixed;
-  top: 10px;
-  left: 50px;
+  -webkit-box-shadow: 3px 3px 5px #4a4a4a;
+  -moz-box-shadow: 3px 3px 5px #4a4a4a;
+  box-shadow: 3px 3px 5px #4a4a4a;
+  display: none;
 }

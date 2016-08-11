@@ -6,5 +6,6 @@ function initializeDraggableMenus() {
             maxWidth: 160,
             minHeight: 300,
             minWidth: 80
-        }); 
+        });
+
 }

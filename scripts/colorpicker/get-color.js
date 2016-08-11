@@ -7,6 +7,7 @@ function getColor() {
     // }
 
     var canvasPlace = document.getElementById('colorpicker');
+    canvasPlace.style.display = 'block';
     var canvas = document.createElement('canvas');
     canvas.style.display = 'block';
     canvas.style.float = 'left';
@@ -39,8 +40,10 @@ function getColor() {
         ctx.lineWidth = 2;
 
         $('#colorpicker').on('mousedown', function (evt) {
+            if(!(evt.target instanceof HTMLCanvasElement)){
+                return;
+            }
             mouseDown = true;
-            
             var color,
                 mousePos = getMousePos(canvas, evt);
 
@@ -58,8 +61,13 @@ function getColor() {
         });
 
         $('#colorpicker').on('mouseup', function (evt) {
+            if(!(evt.target instanceof HTMLCanvasElement)){
+                return;
+            }
+
             mouseDown = false;
             canvas.remove();
+            canvasPlace.style.display = 'none';
         });
 
         $('#colorpicker').on('mousemove', function (evt) {
