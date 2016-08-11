@@ -217,15 +217,6 @@
 - Visual way of controling without needing the keyboard
 
 <!-- section start -->
-<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Controls UI Features
-
-- Takes advantage of **JQuery** .animate()
-
-- Visual way of controling without needing the keyboard
-
-<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
 <!-- # Paint With Shapes
 ## Questions? -->
