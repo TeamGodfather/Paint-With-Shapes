@@ -11,7 +11,7 @@
 </div>
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, style:'font-size: 0.7em' } -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Team Godfather Members
 
@@ -26,7 +26,7 @@
 | Христо Тодоров | todorovh      | [shakuu](https://github.com/shakuu) |
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: {  showInPresentation:true } -->
 
 # GitHub graphics
 
@@ -35,7 +35,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Layer Manager Screenshot
 
@@ -44,7 +44,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/layer-manager.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, style:'font-size: 0.7em' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Layer Manager Features
 
@@ -57,7 +57,7 @@
 - **Insert** background layer from url
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Shapes Screenshot
 
@@ -66,7 +66,7 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { class:"slide-section", showInPresentation:true, style:'font-size: 0.7em' } -->
+<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em' } -->
 
 # Shapes Features
 
