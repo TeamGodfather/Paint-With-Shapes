@@ -1,15 +1,21 @@
 var implementedShapes = {
+    'img': 'img',
+    'star': 'star',
+    'line': 'line',
+    'ring': 'ring',
+    'circle': 'circle',  
+    'triangle': 'triangle',
     'square': 'square',
     'rectangle': 'rectangle',
-    'star': 'star',
-    'hexagon': 'hexagon',
-    'line': 'line',
     'pentagon': 'pentagon',
-    'triangle': 'triangle',
-    'ring': 'ring',
-    'circle': 'circle',
-    'ellipse': 'ellipse',
-    'img': 'img'
+    'hexagon': 'hexagon',
+    'heptagon': 'heptagon',
+    'octagon': 'octagon',
+    'nonegon': 'nonegon',
+    'decagon': 'decagon',
+    'undecagon': 'undecagon',
+    'dodecagon': 'dodecagon',
+    'tredecagon': 'tredecagon',
 };
 
 function initializeShapesUI() {
@@ -79,39 +85,58 @@ function intializeShapeMenuButtonsEvents() {
 function createNewShapeBasedOnInputTypeOfShape(typeOfShape) {
     var newShape;
     switch (typeOfShape) {
+         case implementedShapes.img:
+            newShape= createImg();
+            break;
+         case implementedShapes.star:
+            newShape = createStar();
+            break;
+         case implementedShapes.line:
+            newShape = createLine();
+            break;
+        case implementedShapes.ring:
+            newShape = createRing();
+            break; 
+        case implementedShapes.circle:
+            newShape = createCircle();
+            break;
+        case implementedShapes.triangle:
+            newShape = createTriangle();
+            break;
         case implementedShapes.square:
             newShape = createSquare();
             break;
         case implementedShapes.rectangle:
             newShape = createRectangle();
             break;
-        case implementedShapes.star:
-            newShape = createStar();
+        case implementedShapes.pentagon:
+            newShape = createPentagon();
             break;
         case implementedShapes.hexagon:
             newShape = createHexagon();
             break;
-        case implementedShapes.line:
-            newShape = createLine();
+        case implementedShapes.heptagon:
+            newShape = createHeptagon();
             break;
-        case implementedShapes.pentagon:
-            newShape = createPentagon();
+        case implementedShapes.octagon:
+            newShape = createOctagon();
+            break;       
+        case implementedShapes.nonegon:
+            newShape = createNonegon();
+            break;        
+        case implementedShapes.decagon:
+            newShape = createDecagon();
             break;
-        case implementedShapes.triangle:
-            newShape = createTriangle();
+        case implementedShapes.undecagon:
+            newShape = createUndecagon();
+            break;  
+      case implementedShapes.dodecagon:
+            newShape = createDodecagon();
             break;
-        case implementedShapes.ring:
-            newShape = createRing();
+        case implementedShapes.tredecagon:
+            newShape = createTredecagon();
             break;
-        case implementedShapes.circle:
-            newShape = createCircle();
-            break;
-        case implementedShapes.img:
-            newShape = createImg();
-            break;
-         case implementedShapes.ellipse:
-            newShape = createEllipse();
-            break;   
+
         default:
             break;
     }
