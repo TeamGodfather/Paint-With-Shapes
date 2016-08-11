@@ -2,9 +2,7 @@
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # [Team GodFather's Paint With Shapes](https://teamgodfather.github.io/Paint-With-Shapes/)
 
-## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html)
-
-## [Demo]()
+## [Slides](https://rawgit.com/TeamGodfather/Paint-With-Shapes/master/presentation/index.html)  [Demo]()
 
 ![paint with shapes logo](https://github.com/TeamGodfather/Paint-With-Shapes/blob/master/presentation/imgs/withblackbg.png "Paint With Shapes")
 
@@ -13,7 +11,6 @@
 <div class="signature">
 	<p class="signature-course">JS UI&DOM TeamWork</p>
 	<p class="signature-initiative">Telerik Academy by Progress</p>
-	<a href="https://github.com/TeamGodfather" class="signature-link">Link to the GitHub repository </a>
 </div>
 
 <!-- section start -->
