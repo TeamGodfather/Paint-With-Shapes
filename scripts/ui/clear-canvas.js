@@ -1,5 +1,5 @@
 function initializeClearCanvasButton() {
-    var btnClearCanvas = document
+        document
         .querySelector('#clear #new-canvas-btn')
         .addEventListener('click', function () {
 
