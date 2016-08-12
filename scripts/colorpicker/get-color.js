@@ -8,7 +8,7 @@ document.querySelector('#toggle-color')
         getColor();
     }
     else {
-        $('canvas').remove();
+        $('#colorpicker canvas').remove();
         cp.css('display', 'none');
     }
 });
