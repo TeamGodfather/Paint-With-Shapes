@@ -1,5 +1,5 @@
 function initializeClearCanvasButton() {
-    var btnClearCanvas = document
+        document
         .querySelector('#clear #new-canvas-btn')
         .addEventListener('click', function () {
 
@@ -20,9 +20,9 @@ function initializeClearCanvasButton() {
             document.querySelector('#layer-list').innerHTML = '';
         });
 
-    var btnToggleColor = document
-        .querySelector('#toggle-color')
-        .addEventListener('click', function () {
-            getColor();
-        });
+    // var btnToggleColor = document
+    //     .querySelector('#toggle-color')
+    //     .addEventListener('click', function () {
+    //         getColor();
+    //     });
 }

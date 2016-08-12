@@ -1,4 +1,3 @@
-
 function createEllipse() {
   var oval = new Kinetic.Ellipse({
     x: window.innerWidth / 2,

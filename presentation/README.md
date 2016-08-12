@@ -28,20 +28,11 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
-# GitHub graphics
-
-<!-- ![](./imgs/githubgraphics.png) -->
-
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
-
-<!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
 # Paint With Shapes
 
-<!-- ![](./imgs/githubgraphics.png) -->
+<!-- ![](./imgs/withblackbg.png) -->
 
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/withblackbg.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
@@ -51,6 +42,9 @@
 ## Paint With Shapes
 
 - What's it all about ? 
+  - **Shapes**
+  - **sHaPes**
+  - **SHapeS**
 
 - Project is split into a lot of different files to avoid commit conflicts
 
@@ -174,23 +168,38 @@
 
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/emoticons.png" style="top:15%; width:100%; z-index:-1" /> -->
 
-
-<!-- section start -->
-<!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
-
-# Emoticons
-
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
 # Color Picker Screenshot
 
-<!-- ![](./imgs/shapes.png) -->
+<!-- ![](./imgs/colorpicker.png) -->
 
-<!-- <img showInPresentation="true" class="slide-image" src="imgs/shapes.png" style="top:15%; width:100%; z-index:-1" /> -->
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/colorpicker.png" style="top:15%; width:100%; z-index:-1" /> -->
 
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
+
+# Controls UI Screenshot
+
+<!-- ![](./imgs/controls.png) -->
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/controls.png" style="top:15%; width:100%; z-index:-1" /> -->
 
 <!-- section start -->
 <!-- attr: {  showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
-# Color Picker
+# UI Features
+
+**Emoticons**
+
+**Color Picker**
+
+**Controls UI**
+
+- Takes advantage of **JQuery** .animate()
+
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
+<!-- # Paint With Shapes
+## Questions? -->
