@@ -1,12 +1,11 @@
 function initializeKeyboardControls() {
-    
+
     var keys = {65: false, 87: false, 68: false, 83:false, 13: false,
         81: false, 69: false, 38: false, 40: false,
         37: false, 39: false, 27: false };
 
-    var canvasContainer = $('body').keydown(function addKeyboardListener(event) {
+    $('body').keydown(function (event) {
             // event.preventDefault();
-
 
             if (!currentActiveShape.shape) {
                 return;
