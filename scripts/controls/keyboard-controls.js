@@ -1,39 +1,63 @@
 function initializeKeyboardControls() {
-    var canvasContainer = document
-        .querySelector('body')
-        .addEventListener('keydown', function addKeyboardListener(event) {
+    
+    var keys = {65: false, 87: false, 68: false, 83:false, 13: false,
+        81: false, 69: false, 38: false, 40: false,
+        37: false, 39: false, 27: false };
+
+    var canvasContainer = $('body').keydown(function addKeyboardListener(event) {
             // event.preventDefault();
+
 
             if (!currentActiveShape.shape) {
                 return;
             }
 
-            if (event.keyCode === 65) {
-                rotateCurrentShape(-10);
-            } else if (event.keyCode === 87) {
-                scaleCurrentShape(0.05);
-            } else if (event.keyCode === 68) {
-                rotateCurrentShape(10)
-            } else if (event.keyCode === 83) {
-                scaleCurrentShape(-0.05);
-            } else if (event.keyCode === 13) {
-                releaseCurrentShape();
-            } else if (event.keyCode === 81) {
-                changeCurrentShapeOpacity(-0.05);
-            } else if (event.keyCode === 69) {
-                changeCurrentShapeOpacity(0.05);
-            } else if (event.keyCode === 38) {
-                moveCurrentActiveShapeUp();
-            } else if (event.keyCode === 40) {
-                moveCurrentActiveShapeDown();
-            } else if (event.keyCode === 37) {
-                moveCurrentActiveShapeLeft();
-            } else if (event.keyCode === 39) {
-                moveCurrentActiveShapeRight();
-            } else if (event.keyCode === 27) {
-                cancelCurrentActiveShape();
-            }
-        });
+        if(event.keyCode in keys) {
+            keys[event.keyCode] = true;
+        }
+
+
+        if (keys[65]) {
+            rotateCurrentShape(-10);
+        }
+        if (keys[87]) {
+            scaleCurrentShape(0.05);
+        }
+        if (keys[68]) {
+            rotateCurrentShape(10)
+        }
+        if (keys[83]) {
+            scaleCurrentShape(-0.05);
+        }
+        if (keys[13]) {
+            releaseCurrentShape();
+        }
+        if (keys[81]) {
+            changeCurrentShapeOpacity(-0.05);
+        }
+        if (keys[69]) {
+            changeCurrentShapeOpacity(0.05);
+        }
+        if (keys[38]) {
+            moveCurrentActiveShapeUp();
+        }
+        if (keys[40]) {
+            moveCurrentActiveShapeDown();
+        }
+        if (keys[37]) {
+            moveCurrentActiveShapeLeft();
+        }
+        if (keys[39]) {
+            moveCurrentActiveShapeRight();
+        }
+        if (keys[27]) {
+            cancelCurrentActiveShape();
+        }
+    }).keyup(function (e) {
+        if(e.keyCode in keys) {
+            keys[e.keyCode] = false;
+        }
+    });
 }
 
 function cancelCurrentActiveShape(){
