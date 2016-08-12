@@ -1,30 +1,20 @@
 var isActive = false;
+var cp = $('#colorpicker');
 
-var btnToggleColor = document
-    .querySelector('#toggle-color')
-    .addEventListener('click', function () {
-        isActive = !isActive;
-        if(isActive){
-            getColor();
-        }
-        else {
-            $('canvas').remove();
-            $('#colorpicker').css('display', 'none');
-        }
-    });
+document.querySelector('#toggle-color')
+.addEventListener('click', function () {
+    isActive = !isActive;
+    if(isActive){
+        getColor();
+    }
+    else {
+        $('canvas').remove();
+        cp.css('display', 'none');
+    }
+});
 
 
 function getColor() {
-    // // DELTE THIS WHEN COLOR PICKER IS WORKING
-    // if (currentColor === '#cc00cc') {
-    //     currentColor = '#000000';
-    // } else {
-    //     currentColor = '#cc00cc';
-    // }
-
-
-
-
 
     function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
@@ -62,7 +52,7 @@ function getColor() {
         ctx.strokeStyle = '#444';
         ctx.lineWidth = 2;
 
-        $('#colorpicker').on('mousedown', function (evt) {
+        cp.on('mousedown', function (evt) {
             if(!(evt.target instanceof HTMLCanvasElement)){
                 return;
             }
@@ -84,18 +74,18 @@ function getColor() {
             }
         });
         // i feel like this is not the right way to close the colorpicker. If you like it tho just uncomment it
-        // $('#colorpicker').on('mouseup', function (evt) {
-        //     if(!(evt.target instanceof HTMLCanvasElement)){
-        //         return;
-        //     }
-        //
-        //     isActive = false;
-        //     mouseDown = false;
-        //     canvas.remove();
-        //     canvasPlace.style.display = 'none';
-        // });
+        cp.on('mouseup', function (evt) {
+            if(!(evt.target instanceof HTMLCanvasElement)){
+                return;
+            }
 
-        $('#colorpicker').on('mousemove', function (evt) {
+            isActive = false;
+            mouseDown = false;
+            // canvas.remove();
+            // canvasPlace.style.display = 'none';
+        });
+
+        cp.on('mousemove', function (evt) {
             var color,
                 mousePos = getMousePos(canvas, evt);
 
