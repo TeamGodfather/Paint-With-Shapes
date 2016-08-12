@@ -20,8 +20,8 @@ var implementedShapes = {
 };
 
 function initializeShapesUI() {
-    var shapesMenu = $('#shapes-menu').hide(),
-        btnGetShape = $('#get-shape')
+    var shapesMenu = $('#shapes-menu').hide();
+        $('#get-shape')
             .on('click', function () {
                 shapesMenu.toggle();
             });
